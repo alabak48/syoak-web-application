@@ -1,0 +1,35 @@
+.logo-wrapper {
+    margin-left: -230px; /* Adjust the margin as needed */
+    display: flex;
+    align-items: center;
+    margin-right: 130px;
+}
+
+.icon-registration {
+    color: #0052B4;
+}
+
+.navigation a {
+    color: #303031;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.nav-links a {
+    font-weight: 700;
+}
+
+.registration {
+    font-weight: 500;
+}
+
+.btn.btn--secondary{
+    background-color:  #FBFBFB;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #303031;
+    border-radius: 2pt;
+    border: #0052B4 solid;
+}
