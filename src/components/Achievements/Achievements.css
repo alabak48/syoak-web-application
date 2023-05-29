@@ -1,0 +1,42 @@
+.achievements__heading {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        color: #00367A;
+}
+
+.achievements__icon {
+    background-color: #FBFBFB;
+    border: 1px solid #F0F0F0;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    margin-top: -25px;
+    margin-left: 20px;
+}
+
+.achievements--col img {
+    width: 50px;
+    height: 50px;
+}
+
+.achievements__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+    color: #00367A;
+    align-self: stretch;
+    margin-left: 10px;
+}
+
+.achievements__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175.1%;
+    color: #9DA8B6;
+    align-self: stretch;
+    margin-left: 10px;
+}
