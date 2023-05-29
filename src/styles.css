@@ -1,11 +1,10 @@
-@import "components/Achievements/Achievements.css";
-@import "components/Footer/Footer.css";
-@import "components/Form/Form.css";
-@import "components/HeadingTextImage/HeadingTextImage.css";
-@import "components/MainContainer/MainContainer.css";
-@import "components/Navbar/NavigationBar.css";
-@import "components/Slider/Slider.css";
-
+@import "components/achievements/Achievements.css";
+@import "components/footer/Footer.css";
+@import "components/form/Form.css";
+@import "components/headingtextimage/HeadingTextImage.css";
+@import "components/maincontainer/MainContainer.css";
+@import "components/navbar/NavigationBar.css";
+@import "components/carousel/Carousel.css";
 :root{
     margin-left: 210px;
 }

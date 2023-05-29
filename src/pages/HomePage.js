@@ -1,16 +1,16 @@
-import NavigationBar from "../components/Navbar/NavigationBar";
+import NavigationBar from "../components/navbar/NavigationBar";
 import 'bootstrap/dist/css/bootstrap.css';
-import MainContainer from "../components/MainContainer/MainContainer";
+import MainContainer from "../components/maincontainer/MainContainer";
 import {Component} from "react";
-import TextImageComponent from "../components/HeadingTextImage/HeadingTextImage";
+import TextImageComponent from "../components/headingtextimage/HeadingTextImage";
 import Image1 from "../assets/img_1.svg"
 import Image2 from "../assets/img_2.svg"
 import Image3 from "../assets/img_3.svg"
-import Achievements from "../components/Achievements/Achievements";
-import ContactForm from "../components/Form/Form";
-import Footer from "../components/Footer/Footer";
+import Achievements from "../components/achievements/Achievements";
+import ContactForm from "../components/form/Form";
+import Footer from "../components/footer/Footer";
 import "../styles.css"
-import Carousel from "../components/Carousel/Carousel";
+import Carousel from "../components/carousel/Carousel";
 
 class HomePage extends Component {
     render() {
@@ -46,6 +46,7 @@ class HomePage extends Component {
                     reverse={false}
                     className="info-three"
                 />
+                <Carousel />
                 <Achievements />
                 <ContactForm />
                 <Footer />
