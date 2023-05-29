@@ -1,0 +1,185 @@
+.achievements__heading {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        color: red;
+}
+
+.achievement__icon {
+    background-color: #FBFBFB;
+    border: 1px solid #F0F0F0;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    margin-top: -25px;
+    margin-left: 20px;
+}
+
+.achievements--col img {
+    width: 50px;
+    height: 50px;
+}
+
+.achievements__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+    color: #00367A;
+    align-self: stretch;
+    margin-left: 10px;
+}
+
+.achievements__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175.1%;
+    color: #9DA8B6;
+    align-self: stretch;
+    margin-left: 10px;
+}
+
+.footer__img{
+    width: 150px;
+    height: 38px;
+}
+
+.footer__text{
+    width: 60%;
+    color: #35384D;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer-contact__icon{
+    color: #0052B4;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.about__anchor--redirect,
+.about__list li {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #0052B4;
+}
+
+.form-container__label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #0052B4;
+}
+
+.form-container__check .form-check-input {
+    border: #0052B4 2px solid;
+    border-radius: 4px;
+}
+
+.form-container__check .form-check-input {
+    color: #0052B4; /* Set the background color to blue when checked */
+    border-color: blue; /* Set the border color to blue when checked */
+}
+
+.form-container input{
+    border: none;
+    border-bottom: 1pt #9DA8B6 solid;
+    border-radius: 0;
+}
+
+.form-container textarea{
+    border: none;
+}
+
+h5{
+    color: #00367A;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #6A6A6A;
+
+}
+
+.main__title{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 76px;
+}
+
+.main__description{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 35px;
+    color: #6A6A6A;
+}
+
+.btn--primary{
+    width: 145px;
+    height: 45px;
+    background: #0052B4;
+    text-align: center;
+    border-radius: 0;
+}
+
+.main__arrow{
+    margin-right: 2px;
+   width: 12px;
+    height: 12px
+}
+
+.icon-registration {
+    color: #0052B4;
+}
+
+.navigation a {
+    color: #303031;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.nav-links a {
+    font-weight: 700;
+}
+
+.registration {
+    font-weight: 500;
+}
+
+.btn.btn--secondary{
+    background-color:  #FBFBFB;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #303031;
+    border-radius: 2pt;
+    border: #0052B4 solid;
+}
+
+h3{
+    color: black;
+}
+
+.slider-header{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    color: #00367A;
+}

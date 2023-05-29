@@ -1,0 +1,14 @@
+@import "components/Achievements/Achievements.css";
+@import "components/Footer/Footer.css";
+@import "components/Form/Form.css";
+@import "components/HeadingTextImage/HeadingTextImage.css";
+@import "components/MainContainer/MainContainer.css";
+@import "components/Navbar/NavigationBar.css";
+@import "components/Slider/Slider.css";
+
+:root{
+    margin-left: 210px;
+}
+body {
+    border-left: #E1E1E1 1px solid;
+}

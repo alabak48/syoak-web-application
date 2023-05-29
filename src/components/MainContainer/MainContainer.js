@@ -6,7 +6,7 @@ import "../../styles/styles.css"
 function MainContainer() {
     return (
         <main>
-            <Container className="main mt-5 px-5">
+            <Container className="main mt-5 px-5 pb-5">
                 <Row className="main__row px-5">
                     <Col xl={10} lg={9} md={11} sm={11} className="main__title-col">
                         <h1 className="main__title">Our business takes the industry of oil & gas to a new level.</h1>
@@ -23,6 +23,13 @@ function MainContainer() {
                             Learn more</Button>
                     </Col>
                 </Row>
+                    <Col lg={6} className="main-second mt-5 px-5">
+                    <h2>SYOAK Solution</h2>
+                    <p className="main-second__text mt-5">SYOAK industry consists of companies that own and operate extensive networks of pipeline assets
+                        to connect producers of oil, natural gas and natural gas liquids from the prolific North
+                        American resources to key markets. We also distribute natural gas to a growing base of
+                        industrial and residential customers through transmission pipelines.</p>
+                    </Col>
             </Container>
         </main>
     )
