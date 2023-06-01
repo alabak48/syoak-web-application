@@ -10,7 +10,7 @@ import { SlideUpCard } from '../animation/SlideUpEffect'
 
 function Achievements() {
     return (
-        <Container className="achievements px-5 pb-5">
+        <Container className="achievements px-5 pb-5 pt-5">
             <Row className="achievements__row px-5 pb-5">
                 <FadeInEffect>
                 <Col lg={7} className="achievements__col pb-5">

@@ -6,6 +6,7 @@ import "./Carousel.css";
 import {Col, Container, Row} from "react-bootstrap";
 import React, {useRef} from "react";
 import { BiChevronLeft, BiChevronRight  } from 'react-icons/bi';
+import {FadeInEffect} from "../animation/FadeInEffect";
 
 
 function CarouselContainer() {
@@ -18,8 +19,9 @@ function CarouselContainer() {
         ref.current.next();
     };
     return (
+<FadeInEffect>
         <Carousel ref={ref} variant="dark" indicators={false} controls={false} className="carousel pb-5">
-            <Carousel.Item className="pt-5 px-5">
+            <Carousel.Item className="pt-5 px-5" interval={2000}>
                 <div className="carousel__btn">
                     <div className="carousel__container align-center">
                         <BiChevronLeft onClick={onPrevClick} className="carousel__arrows" />
@@ -36,7 +38,7 @@ function CarouselContainer() {
                             <p>We have a long and proud history givin emphasis to environment social and economic
                                 outcomes to deliver places that respond.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </Col>
-                        <Col lg={8} className="d-flex align-items-center justify-content-center">
+                        <Col lg={8} className="d-flex align-items-end justify-content-center">
                             <img
                                 className=""
                                 src={image1}
@@ -46,7 +48,7 @@ function CarouselContainer() {
                     </Row>
                 </Container>
             </Carousel.Item>
-            <Carousel.Item className="pt-5 px-5">
+            <Carousel.Item className="pt-5 px-5" interval={2000}>
                 <div className="carousel__btn">
                     <div className="align-center">
                         <BiChevronLeft onClick={onPrevClick} className="carousel__arrows" />
@@ -65,7 +67,7 @@ function CarouselContainer() {
                                 printer took a galley of type and scrambled it to make a type specimen book. It has
                                 survived not only five centuries, </p>
                         </Col>
-                        <Col lg={8} className="d-flex align-items-center justify-content-center">
+                        <Col lg={8} className="d-flex align-items-end justify-content-center">
                             <img
                                 className=""
                                 src={image1}
@@ -75,7 +77,7 @@ function CarouselContainer() {
                     </Row>
                 </Container>
             </Carousel.Item>
-            <Carousel.Item className="pt-5 px-5">
+            <Carousel.Item className="pt-5 px-5" interval={2000}>
                 <div className="carousel__btn">
                     <div className="align-center">
                         <BiChevronLeft onClick={onPrevClick} className="carousel__arrows" />
@@ -94,7 +96,7 @@ function CarouselContainer() {
                                 printer took a galley of type and scrambled it to make a type specimen book. It has
                                 survived not only five centuries, </p>
                         </Col>
-                        <Col lg={8} className="d-flex align-items-center justify-content-center">
+                        <Col lg={8} className="d-flex align-items-end justify-content-center">
                             <img
                                 className=""
                                 src={image1}
@@ -104,7 +106,7 @@ function CarouselContainer() {
                     </Row>
                 </Container>
             </Carousel.Item>
-            <Carousel.Item className="pt-5 px-5">
+            <Carousel.Item className="pt-5 px-5" interval={2000}>
                 <div className="carousel__btn ">
                     <div className="align-center">
                         <BiChevronLeft onClick={onPrevClick} className="carousel__arrows" />
@@ -122,7 +124,7 @@ function CarouselContainer() {
                                 printer took a galley of type and scrambled it to make a type specimen book. It has
                                 survived not only five centuries, </p>
                         </Col>
-                        <Col lg={8} className="d-flex align-items-center justify-content-center">
+                        <Col lg={8} className="d-flex align-items-end justify-content-center">
                             <img
                                 className=""
                                 src={image1}
@@ -133,6 +135,7 @@ function CarouselContainer() {
                 </Container>
             </Carousel.Item>
         </Carousel>
+</FadeInEffect>
     );
 }
 

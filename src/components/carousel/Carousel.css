@@ -76,3 +76,15 @@
 .carousel__btn--round:hover::before {
     opacity: 1;
 }
+
+.carousel{
+    height: 500px;
+}
+
+.carousel__arrows{
+    color: white;
+}
+
+.carousel__arrows:hover{
+    color: #FF7616;
+}
