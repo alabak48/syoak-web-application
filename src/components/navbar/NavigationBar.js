@@ -10,7 +10,7 @@ function NavigationBar() {
     return (
         <FadeInEffect>
             <header className="navigation px-5">
-                <Navbar className="px-4">
+                <Navbar className="px-4" expand="lg">
                     <Container className="navigation__container">
                         <div className="logo-wrapper">
                             <Navbar.Brand href="#home" className="navigation__logo">
@@ -23,18 +23,18 @@ function NavigationBar() {
                                 />{' '}
                             </Navbar.Brand>
                         </div>
-                        <Navbar.Toggle aria-controls="responsive-navbar__nav"/>
+                        <Navbar.Toggle aria-controls="responsive-navbar__nav" data-bs-target="#responsive-navbar__nav" />
                         <Navbar.Collapse id="responsive-navbar__nav">
                             <Nav className="nav-links me-auto">
-                                <Nav.Link className="nav-links nav-links__services">Services</Nav.Link>
-                                <Nav.Link className="nav-links nav-links__projects">Projects</Nav.Link>
-                                <Nav.Link className="nav-links nav-links__about-us">About us</Nav.Link>
-                                <Nav.Link className="nav-links nav-links__blog">Blog</Nav.Link>
+                                <Nav.Link className="nav-links nav-links__services me-auto">Services</Nav.Link>
+                                <Nav.Link className="nav-links nav-links__projects me-auto">Projects</Nav.Link>
+                                <Nav.Link className="nav-links nav-links__about-us me-auto">About us</Nav.Link>
+                                <Nav.Link className="nav-links nav-links__blog me-auto">Blog</Nav.Link>
                             </Nav>
-                            <Nav className="registration">
-                                <Nav.Link className="registration registration__log-in"><FaUserCircle
+                            <Nav className="registration mr-auto">
+                                <Nav.Link className="registration registration__log-in me-auto"><FaUserCircle
                                     className="icon-registration icon-registration__log-in"/> Log in</Nav.Link>
-                                <Nav.Link eventKey={2} className="registration registration__contact-us">
+                                <Nav.Link eventKey={2} className="registration registration__contact-us me-auto">
                                     <FaPaperPlane className="icon-registration icon-registration__contact-us"/> Contact
                                     us
                                 </Nav.Link>
