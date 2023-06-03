@@ -27,20 +27,20 @@ p {
 }
 
 .tooltip__btn {
-    background-color: #FF7616;
-    border: 3px #fa8b47 solid;
+    background-color: var(--orange-color);
     border-radius: 100%;
     width: 20px;
     height: 20px;
-}
-
-.tooltip__img {
-    color: #FF7616;
+    border: 3px solid rgba(255, 182, 126, 0.5);
 }
 
 .tooltip__btn:hover {
     background-color: var(--blue-color);
     border: 3px var(--btn-blue-color) solid;
+}
+
+.tooltip__img {
+    color: #FF7616;
 }
 
 .tooltip-inner {
@@ -59,4 +59,17 @@ p {
 
 .tooltip-arrow {
     visibility: hidden;
+}
+
+.tooltip__container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tooltip__icon {
+    margin-right: 10px;
+}
+
+.tooltip__content {
+    flex: 1;
 }

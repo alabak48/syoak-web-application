@@ -87,8 +87,8 @@
 }
 
 .form-container__check .form-check-input {
-    color: #0052B4; /* Set the background color to blue when checked */
-    border-color: blue; /* Set the border color to blue when checked */
+    color: #0052B4;
+    border-color: blue;
 }
 
 .form-container input{

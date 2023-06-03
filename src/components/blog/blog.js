@@ -10,12 +10,17 @@ const Blog = ({h5, h5ClassName, image, imageClassName, p, pClassName, reverse, c
 
     const tooltip = (
         <Tooltip id="tooltip">
-            <RxCross1 alt="Tooltip X" className="tooltip__img"/>
-            <div className="tooltip__text">
-                <span>Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk</span>
+            <div className="tooltip__container">
+                <div className="tooltip__icon">
+                    <RxCross1 alt="Tooltip X" className="tooltip__img" />
+                </div>
+                <div className="tooltip__content">
+                    Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk
+                </div>
             </div>
         </Tooltip>
     );
+
 
     return (
         <section className="blog">
