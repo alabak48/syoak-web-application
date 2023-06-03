@@ -6,8 +6,9 @@
 @import "components/navbar/NavigationBar.css";
 @import "components/carousel/Carousel.css";
 :root{
-    margin-left: 210px;
+    margin-left: 200px;
 }
 body {
     border-left: #E1E1E1 1px solid;
+    background-color: #FBFBFB;
 }

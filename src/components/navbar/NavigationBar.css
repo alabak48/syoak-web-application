@@ -1,5 +1,5 @@
 .logo-wrapper {
-    margin-left: -230px; /* Adjust the margin as needed */
+    margin-left: -230px;
     display: flex;
     align-items: center;
     margin-right: 130px;
@@ -13,8 +13,11 @@
     color: #303031;
     font-size: 13px;
     line-height: 20px;
+    margin-right: 20px;
 }
-
+.navigation__logo--first{
+    width: 90px;
+}
 .nav-links a {
     font-weight: 700;
 }
@@ -28,8 +31,8 @@
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
-    line-height: 20px;
     color: #303031;
-    border-radius: 2pt;
+    border-radius: 3pt;
     border: #0052B4 solid;
+    padding: 0 20px 0 20px;
 }

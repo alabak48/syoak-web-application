@@ -5,7 +5,7 @@ import {Nav} from "react-bootstrap";
 import {FaPaperPlane, FaUserCircle} from 'react-icons/fa';
 import "../../styles/styles.css";
 import {FadeInEffect} from '../animation/FadeInEffect'
-
+import {HiArrowLongDown} from "react-icons/hi2";
 
 function NavigationBar() {
     return (
@@ -20,7 +20,7 @@ function NavigationBar() {
                                     src={Logo}
                                     width="70"
                                     height="30"
-                                    className="d-inline-block align-top"
+                                    className="navigation__logo--first d-inline-block align-top"
                                 />{' '}
                             </Navbar.Brand>
                         </div>
