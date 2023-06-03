@@ -1,4 +1,4 @@
-.text-container__text {
+.blog-text__container {
     width: 430px;
     text-align: left;
 }
@@ -34,13 +34,13 @@ p {
     height: 20px;
 }
 
-.tooltip-image {
+.tooltip__img {
     color: #FF7616;
 }
 
 .tooltip__btn:hover {
-    background-color: #0052B4;
-    border: 3px #006eea solid;
+    background-color: var(--blue-color);
+    border: 3px var(--btn-blue-color) solid;
 }
 
 .tooltip-inner {

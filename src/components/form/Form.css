@@ -1,31 +1,37 @@
-.form-container__label{
+@import "../../styles/variables.css";
+
+.form-control {
+    background-color: var(--background-color);
+}
+
+.form-container__label {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    color: #0052B4;
+    color: var(--blue-color);
 }
 
 .form-container__check .form-check-input {
-    border: #0052B4 2px solid;
+    border: var(--blue-color) 2px solid;
     border-radius: 4px;
 }
 
-.form-container__verification input{
+.form-container__verification input {
     border: none;
     border-bottom: 1pt #9DA8B6 solid;
     border-radius: 0;
 }
 
-.form-container textarea{
+.form-container textarea {
     border: none;
 }
 
-.form-control{
+.form-control {
     width: 430px;
 }
 
-.form-map__image{
+.form-map__image {
     margin-top: 60px;
     width: 542px;
     height: 563px;

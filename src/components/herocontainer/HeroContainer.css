@@ -3,29 +3,29 @@
 @custom-media --tablet (min-width: 768px) and (max-width: 1023px);
 @custom-media --desktop (min-width: 1024px);
 
-.main__title{
+.hero__title {
     font-size: 60px;
     font-weight: 900;
     line-height: 76px;
 }
 
-.main__description{
+.hero-description {
     font-weight: 400;
     font-size: 19px;
     line-height: 35px;
     color: #6A6A6A;
 }
 
-.btn--primary{
+.btn--primary {
     width: 145px;
     height: 45px;
-    background: #0052B4;
+    background: var(--btn-blue-color);
     text-align: center;
     border-radius: 0;
 }
 
-.main__arrow{
+.hero__arrow {
     margin-right: 2px;
-   width: 12px;
+    width: 12px;
     height: 12px
 }

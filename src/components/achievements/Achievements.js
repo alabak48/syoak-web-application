@@ -10,7 +10,8 @@ import { SlideUpCard } from '../animation/SlideUpEffect'
 
 function Achievements() {
     return (
-        <Container className="achievements px-5 pb-5 pt-5">
+        <section className="achievements">
+        <Container className="achievements-container px-5 pb-5 pt-5">
             <Row className="achievements__row px-5 pb-5">
                 <FadeInEffect>
                 <Col lg={7} className="achievements__col pb-5">
@@ -23,7 +24,7 @@ function Achievements() {
                 </Col>
             </FadeInEffect>
             </Row>
-            <Row className="achievements--row px-5 pb-5">
+            <Row className="achievements__row px-5 pb-5">
                 <Col lg={3} className="achievements__col pb-5">
                     <SlideUpCard>
                         <Card style={{width: '15rem'}}>
@@ -83,6 +84,7 @@ function Achievements() {
                 </Col>
             </Row>
         </Container>
+        </section>
     )
 }
 export default Achievements

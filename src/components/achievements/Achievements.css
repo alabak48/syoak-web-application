@@ -1,13 +1,13 @@
 .achievements__heading {
-        font-style: normal;
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 56px;
-        color: #00367A;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--blue-color);
 }
 
 .achievements__icon {
-    background-color: #FBFBFB;
+    background-color: var(--background-color);
     border: 1px solid #F0F0F0;
     border-radius: 100%;
     width: 70px;
@@ -16,7 +16,7 @@
     margin-left: 20px;
 }
 
-.achievements--col img {
+.achievements__col img {
     width: 50px;
     height: 50px;
 }
@@ -26,7 +26,7 @@
     font-weight: 900;
     font-size: 25px;
     line-height: 30px;
-    color: #00367A;
+    color: var(--blue-color);
     align-self: stretch;
     margin-left: 10px;
 }

@@ -1,9 +1,9 @@
-.btn-navigation__container {
+.btn-navigation__container--inner {
     display: flex;
     align-items: center;
 }
 
-.navigation__arrow-icon{
+.navigation__arrow-icon {
     margin-left: -160px;
     margin-bottom: -350px;
 }

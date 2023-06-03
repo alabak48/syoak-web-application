@@ -1,8 +1,8 @@
 import NavigationBar from "../components/navbar/NavigationBar";
 import 'bootstrap/dist/css/bootstrap.css';
-import MainContainer from "../components/maincontainer/MainContainer";
+import HeroContainer from "../components/herocontainer/HeroContainer";
 import {Component} from "react";
-import TextImageComponent from "../components/headingtextimage/HeadingTextImage";
+import TextImageComponent from "../components/blog/blog";
 import Image1 from "../assets/img_1.svg"
 import Image2 from "../assets/img_2.svg"
 import Image3 from "../assets/img_3.svg"
@@ -18,7 +18,7 @@ class HomePage extends Component {
             <>
 
                 <NavigationBar/>
-                <MainContainer/>
+                <HeroContainer/>
                 <TextImageComponent
                     h5="Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk"
                     h5ClassName="info-one__heading"

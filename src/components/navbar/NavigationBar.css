@@ -6,7 +6,7 @@
 }
 
 .icon-registration {
-    color: #0052B4;
+    color: var(--btn-blue-color);
 }
 
 .navigation a {
@@ -15,9 +15,11 @@
     line-height: 20px;
     margin-right: 20px;
 }
-.navigation__logo--first{
+
+.navigation__logo--first {
     width: 90px;
 }
+
 .nav-links a {
     font-weight: 700;
 }
@@ -26,13 +28,13 @@
     font-weight: 500;
 }
 
-.btn.btn--secondary{
-    background-color:  #FBFBFB;
+.btn.btn--secondary {
+    background-color: #FBFBFB;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     color: #303031;
     border-radius: 3pt;
-    border: #0052B4 solid;
+    border: var(--btn-blue-color) solid;
     padding: 0 20px 0 20px;
 }

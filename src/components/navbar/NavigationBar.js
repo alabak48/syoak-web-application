@@ -5,14 +5,13 @@ import {Nav} from "react-bootstrap";
 import {FaPaperPlane, FaUserCircle} from 'react-icons/fa';
 import "../../styles/styles.css";
 import {FadeInEffect} from '../animation/FadeInEffect'
-import {HiArrowLongDown} from "react-icons/hi2";
 
 function NavigationBar() {
     return (
         <FadeInEffect>
             <header className="navigation px-5">
                 <Navbar className="px-4">
-                    <Container>
+                    <Container className="navigation__container">
                         <div className="logo-wrapper">
                             <Navbar.Brand href="#home" className="navigation__logo">
                                 <img
@@ -24,8 +23,8 @@ function NavigationBar() {
                                 />{' '}
                             </Navbar.Brand>
                         </div>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                        <Navbar.Collapse id="responsive-navbar-nav">
+                        <Navbar.Toggle aria-controls="responsive-navbar__nav"/>
+                        <Navbar.Collapse id="responsive-navbar__nav">
                             <Nav className="nav-links me-auto">
                                 <Nav.Link className="nav-links nav-links__services">Services</Nav.Link>
                                 <Nav.Link className="nav-links nav-links__projects">Projects</Nav.Link>

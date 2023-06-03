@@ -1,10 +1,11 @@
 @import "components/achievements/Achievements.css";
 @import "components/footer/Footer.css";
 @import "components/form/Form.css";
-@import "components/headingtextimage/HeadingTextImage.css";
-@import "components/maincontainer/MainContainer.css";
+@import "components/blog/blog.css";
+@import "components/herocontainer/HeroContainer.css";
 @import "components/navbar/NavigationBar.css";
 @import "components/carousel/Carousel.css";
+
 :root{
     margin-left: 200px;
 }

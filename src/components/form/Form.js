@@ -9,7 +9,7 @@ import {SlideUpCard} from '../animation/SlideUpEffect'
 
 function ContactForm() {
     return (
-        <section>
+        <section className="form-container">
             <Container className="px-5 pb-5">
                 <Row className="px-5 pb-5">
                     <Col lg={6} className="form mt-5 ">

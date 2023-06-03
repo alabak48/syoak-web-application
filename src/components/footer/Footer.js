@@ -8,10 +8,10 @@ import {FadeInEffect} from '../animation/FadeInEffect';
 
 function FooterContainer() {
     return (
-        <footer>
-            <Container className="footer mt-5 px-5">
-                <Row className="px-5">
-                    <Col lg={6} className="footer-col">
+        <footer className="footer">
+            <Container className="footer-container mt-5 px-5">
+                <Row className="footer__row px-5">
+                    <Col lg={6} className="footer__col">
                         <FadeInEffect>
                             <SlideUpCard>
                                 <Image className="footer__img" src={LogoName}></Image>
@@ -28,55 +28,55 @@ function FooterContainer() {
                             </SlideUpCard>
                         </FadeInEffect>
                     </Col>
-                    <Col lg={2} className="about__list mt-3 pb-5">
+                    <Col lg={2} className="footer-about__list mt-3 pb-5">
                         <FadeInEffect>
                             <SlideUpCard>
                                 <ul>
-                                    <h6 className="about__title about__title--company">Company</h6>
-                                    <li><a className="about__anchor--redirect" href="http://localhost:3000/">About
+                                    <h6 className="footer-about__title about__title--company">Company</h6>
+                                    <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">About
                                         us</a></li>
-                                    <li><a className="about__anchor--redirect" href="http://localhost:3000/">Company</a>
+                                    <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">Company</a>
                                     </li>
-                                    <li><a className="about__anchor--redirect" href="http://localhost:3000/">How we do
+                                    <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">How we do
                                         it</a>
                                     </li>
                                 </ul>
                             </SlideUpCard>
                         </FadeInEffect>
                     </Col>
-                    <Col lg={2} className="about__list mt-3">
+                    <Col lg={2} className="footer-about__list mt-3">
                         <SlideUpCard>
                             <ul>
-                                <h6 className="about__title about__title--services">Services</h6>
-                                <li><a className="about__anchor--redirect" href="http://localhost:3000/">Oil & Gas
+                                <h6 className="footer-about__title about__title--services">Services</h6>
+                                <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">Oil & Gas
                                     Industry</a></li>
-                                <li><a className="about__anchor--redirect" href="http://localhost:3000/">Fuel
+                                <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">Fuel
                                     Management</a>
                                 </li>
-                                <li><a className="about__anchor--redirect" href="http://localhost:3000/">Chemical
+                                <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">Chemical
                                     Research</a></li>
-                                <li><a className="about__anchor--redirect" href="http://localhost:3000/">Power &
+                                <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">Power &
                                     Energy</a>
                                 </li>
-                                <li><a className="about__anchor--redirect" href="http://localhost:3000/">Eco & Bio
+                                <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">Eco & Bio
                                     power</a>
                                 </li>
                             </ul>
                         </SlideUpCard>
                     </Col>
-                    <Col lg={2} className="about__list mt-3 pb-5">
+                    <Col lg={2} className="footer-about__list mt-3 pb-5">
                         <FadeInEffect>
                             <SlideUpCard>
                                 <ul>
-                                    <h6 className="about__title about__title--projects">Projects</h6>
-                                    <li><a className="about__anchor--redirect" href="http://localhost:3000/">Factory</a>
+                                    <h6 className="footer-about__title about__title--projects">Projects</h6>
+                                    <li><a className="footer-about__anchor--redirect" href="http://localhost:3000/">Factory</a>
                                     </li>
-                                    <li><a className="about__anchor--redirect"
+                                    <li><a className="footer-about__anchor--redirect"
                                            href="http://localhost:3000/">Industry</a></li>
-                                    <li><a className="about__anchor--redirect"
+                                    <li><a className="footer-about__anchor--redirect"
                                            href="http://localhost:3000/">Manufacturing</a>
                                     </li>
-                                    <li><a className="about__anchor--redirect"
+                                    <li><a className="footer-about__anchor--redirect"
                                            href="http://localhost:3000/">Mechanical</a></li>
                                 </ul>
                             </SlideUpCard>

@@ -7,10 +7,10 @@ const ButtonNavigation = () => {
     return (
         <>
             <HiOutlineArrowNarrowDown className="navigation__arrow-icon" style={{ transform: "scaleX(2) scaleY(3)" }} />
-            <Container className="navigation-btn pt-5 pb-5">
+            <Container className="navigation-btn__container pt-5 pb-5">
                 <Row>
-                    <Col lg={12} className="navigation-btn mt-5 px-5 pt-5">
-                        <div className="btn-navigation__container">
+                    <Col lg={12} className="navigation-btn__col mt-5 px-5 pt-5">
+                        <div className="btn-navigation__container--inner">
                             <button className="carousel__btn--round" data-text="Extraction">
                             </button>
                             <div className="carousel__horizontal-line"></div>
