@@ -3,3 +3,8 @@
     align-items: center;
 }
 
+.navigation__arrow-icon{
+    margin-left: -160px;
+    margin-bottom: -350px;
+}
+
