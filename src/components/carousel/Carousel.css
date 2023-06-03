@@ -1,8 +1,5 @@
-.carousel{
-    margin-bottom: 200px;
-}
 
-.carousel__text h2{
+.carousel__text h2 {
     width: 70%;
 }
 
@@ -13,13 +10,13 @@
 }
 
 .carousel__btn--round {
-     background: #0052B4;
-     border-radius: 100%;
-     box-shadow: 0 0 0 2px #0052B4;
-     border: 3px solid #ffffff;
-     width: 20px;
-     height: 20px;
- }
+    background: #0052B4;
+    border-radius: 100%;
+    box-shadow: 0 0 0 2px #0052B4;
+    border: 3px solid #ffffff;
+    width: 20px;
+    height: 20px;
+}
 
 .carousel__btn--round:hover {
     background: #FF7616;
@@ -37,7 +34,7 @@
     border: dashed 1px lightgrey;
 }
 
-.carousel__horizontal-line--hidden{
+.carousel__horizontal-line--hidden {
     flex-grow: 1;
     height: 1px;
     margin-left: 10px;
@@ -77,14 +74,25 @@
     opacity: 1;
 }
 
-.carousel{
-    height: 500px;
+.carousel-item {
+    height: 700px;
 }
 
-.carousel__arrows{
+.carousel__arrows {
     color: white;
 }
 
-.carousel__arrows:hover{
+.carousel__arrows:hover {
     color: #FF7616;
+}
+
+
+.carousel img {
+    margin-top: 180px;
+}
+
+.carousel-row {
+    height: 200px;
+    display: flex;
+    align-items: center;
 }

@@ -1,25 +1,62 @@
-.text-container__text{
+.text-container__text {
     width: 430px;
     text-align: left;
 }
-h2{
+
+h2 {
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 56px;
     color: #00367A;
 }
-h5{
+
+h5 {
     color: #00367A;
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
 }
 
-p{
+p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: #6A6A6A;
 
+}
+
+.tooltip__btn {
+    background-color: #FF7616;
+    border: 3px #fa8b47 solid;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.tooltip-image {
+    color: #FF7616;
+}
+
+.tooltip__btn:hover {
+    background-color: #0052B4;
+    border: 3px #006eea solid;
+}
+
+.tooltip-inner {
+    background-color: white;
+    color: #666666;
+    text-align: left;;
+}
+
+.tooltip {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: white;
+    color: #666666;
+    text-align: left;;
+}
+
+.tooltip-arrow {
+    visibility: hidden;
 }

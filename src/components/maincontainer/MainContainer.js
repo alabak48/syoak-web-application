@@ -27,12 +27,11 @@ function MainContainer() {
                                 <BsArrowUpRight className="main__arrow"/>
                                 Learn more</Button>
                         </Col>
-
                     </Row>
                     <ButtonNavigation/>
                 </FadeInEffect>
                 <FadeInEffect>
-                    <Col lg={6} className="main-second mt-5 px-5">
+                    <Col lg={7} className="main-second mt-5 px-5">
                         <h2>SYOAK Solution</h2>
                         <p className="main-second__text mt-5">SYOAK industry consists of companies that own and operate
                             extensive networks of pipeline assets
