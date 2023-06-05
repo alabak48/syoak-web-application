@@ -31,12 +31,12 @@
    ├── navbar                    #Navigation bar container
       ├── NavigationBar.css      #Navigation bar component stylesheet
       ├── NavigationBar.js       #Navigation bar component
-├── pages
-   ├── HomePage.js              #Rendering all components
-├── styles
-   ├── styles.css                  #PostCSS file
-   ├── variables.css               #CSS Color Variables
-App.js #Rendering Home page
-index.js #Root render
-styles.css #Importing all CSS files for PostCSS and global CSS file
+├── pages                        #Folder for storing pages
+   ├── HomePage.js               #Rendering all components
+├── styles                       #Folder for stylesheet files
+   ├── styles.css                #PostCSS file
+   ├── variables.css             #CSS Color Variables
+├── App.js                       #Rendering Home page 
+├── index.js                     #Root render
+├── styles.css                   #Importing all CSS files for PostCSS and global CSS file
 ```
