@@ -32,12 +32,12 @@ function ContactForm() {
                                         <Form.Label className="form-container__label">Message</Form.Label>
                                         <Form.Control as="textarea" placeholder="Write something here..." rows={5}/>
                                     </Form.Group>
-                                    <Form.Group className="mb-4" controlId="formBasicCheckbox">
+                                    <Form.Group className="mb-4 mb-md-4" controlId="formBasicCheckbox">
                                         <Form.Label className="form-container__verification">Verification</Form.Label>
                                         <Form.Check type="checkbox" className="form-container__check"
                                                     label="I am not a robot"/>
                                     </Form.Group>
-                                    <Button className="btn btn--primary">
+                                    <Button className="btn btn--primary mb-md-4">
                                         Send a message
                                     </Button>
                                 </Form>

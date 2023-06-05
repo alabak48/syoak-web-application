@@ -124,7 +124,9 @@
     @media(--md-viewport){
         display: none;
     }
-
+    @media(--xxl-viewport){
+        left: 1200px;
+    }
 }
 
 .wrapper__tooltip--second{
@@ -137,7 +139,10 @@
     @media(--md-viewport){
         display: none;
     }
-
+    @media(--xxl-viewport){
+        top: 300px;
+        left: 1400px;
+    }
 }
 
 .tooltip__text{

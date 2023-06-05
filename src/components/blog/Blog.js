@@ -24,14 +24,14 @@ function BlogContainer() {
         <section className="blog">
             <Container className="blog__container mt-5 px-4 px-lg-5 pb-5">
                 <Row className="blog__row px-lg-5 mt-sm-5 pt-5">
-                    <Col lg={6} md={6}>
+                    <Col xl={6} lg={6} md={6}>
                         <FadeInEffect>
                             <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk</h5>
                             <p>We have a long and proud history giving emphasis to environment social and economic
                                 outcomes to deliver places that respond.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </FadeInEffect>
                     </Col>
-                    <Col lg={6} md={6} className="blog__col d-flex justify-content-center px-5">
+                    <Col xl={6} lg={6} md={6} className="blog__col d-flex justify-content-center px-5">
                         <FadeInEffect>
                             <div style={{position: 'relative'}}>
                                 <ButtonToolbar style={{position: 'absolute', top: 190, right: 50, zIndex: 2}}>
@@ -44,7 +44,7 @@ function BlogContainer() {
                                         <button bsstyle="default" className="tooltip__btn"></button>
                                     </OverlayTrigger>
                                 </ButtonToolbar>
-                                <Image src={Image1} alt="" className="blog__img" />
+                                <Image src={Image1} alt="Mechanic part" className="blog__img" />
                             </div>
 
 
@@ -54,7 +54,7 @@ function BlogContainer() {
                     </Col>
                 </Row>
                 <Row className="blog__row px-lg-5 mt-sm-5 pt-5">
-                    <Col lg={6} md={6} className="blog__col d-flex justify-content-left px-5 order-2 order-sm-1">
+                    <Col xl={6} lg={6} md={6} className="blog__col d-flex justify-content-left px-5 order-2 order-sm-1">
                         <FadeInEffect>
                             <div style={{position: 'relative'}}>
                                 <ButtonToolbar style={{position: 'absolute', top: 190, right: 50, zIndex: 2}}>
@@ -67,11 +67,11 @@ function BlogContainer() {
                                         <button bsStyle="default" className="tooltip__btn"></button>
                                     </OverlayTrigger>
                                 </ButtonToolbar>
-                                <Image src={Image2} alt="" className="blog__img" />
+                                <Image src={Image2} alt="Gas pump" className="blog__img" />
                             </div>
                         </FadeInEffect>
                     </Col>
-                    <Col lg={6} md={6} className="order-1 order-sm-2">
+                    <Col xl={6} lg={6} md={6} className="order-1 order-sm-2">
                         <FadeInEffect>
                             <h5>Our business takes the industry of oil and gass to a new level.</h5>
                             <p>We have a long and proud history emphasizing environment social and economic
@@ -80,14 +80,14 @@ function BlogContainer() {
                     </Col>
                 </Row>
                 <Row className="blog__row px-lg-5 mt-sm-5 pt-5">
-                    <Col lg={6} md={6}>
+                    <Col xl={6} lg={6} md={6}>
                         <FadeInEffect>
                             <h5>Syoak serves more than 2,500 petrol stations globally</h5>
                             <p>We have a long and proud history giving emphasis to environment social and economic outcomes
                                 to deliver places that respond.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </FadeInEffect>
                     </Col>
-                    <Col lg={6} md={6} className="blog__col d-flex justify-content-center px-5">
+                    <Col xl={6} lg={6} md={6} className="blog__col d-flex justify-content-center px-5">
                         <FadeInEffect>
                             <div style={{position: 'relative'}}>
                                 <ButtonToolbar style={{position: 'absolute', top: 190, right: 50, zIndex: 2}}>
@@ -100,7 +100,7 @@ function BlogContainer() {
                                         <button bsStyle="default" className="tooltip__btn"></button>
                                     </OverlayTrigger>
                                 </ButtonToolbar>
-                                <Image src={Image3} alt="" className="blog__img" />
+                                <Image src={Image3} alt="Gas truck" className="blog__img" />
                             </div>
                         </FadeInEffect>
                     </Col>

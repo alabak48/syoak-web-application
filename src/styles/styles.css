@@ -16,6 +16,12 @@
     margin-left: 20px;
 }
 
+.card-img-top {
+    object-fit: contain;
+    height: 50%;
+    width: 50%;
+}
+
 .achievements__col img {
     width: 50px;
     height: 50px;
@@ -134,6 +140,10 @@
 
 .form-control {
     background-color: var(--background-color);
+}
+
+.footer__text{
+    font-size: 16px;
 }
 
 .form__title{
@@ -370,7 +380,15 @@ p {
 @media (max-width: 576px) {
 
 .btn.btn--secondary {
-        border: none;
+        border: none !important;
+        font-size: 15px;
+}
+    }
+
+@media (max-width: 769px) {
+
+.btn.btn--secondary {
+        border: none !important;
         font-size: 15px;
 }
     }
@@ -513,14 +531,12 @@ p {
     box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
     right: 150px;
-
 }
 
 @media(max-width: 576px){
 
 .wrapper__tooltip--first, .wrapper__tooltip--second{
         display: none;
-
 }
 
     }
@@ -529,7 +545,13 @@ p {
 
 .wrapper__tooltip--first, .wrapper__tooltip--second{
         display: none;
+}
+    }
 
+@media(min-width: 2500px){
+
+.wrapper__tooltip--first, .wrapper__tooltip--second{
+        left: 1200px;
 }
     }
 
@@ -537,14 +559,12 @@ p {
     top: 300px;
     right: 400px;
     background-color: white;
-
 }
 
 @media(max-width: 576px){
 
 .wrapper__tooltip--second{
         display: none;
-
 }
     }
 
@@ -552,7 +572,14 @@ p {
 
 .wrapper__tooltip--second{
         display: none;
+}
+    }
 
+@media(min-width: 2500px){
+
+.wrapper__tooltip--second{
+        top: 300px;
+        left: 1400px;
 }
     }
 
@@ -650,6 +677,13 @@ html{
     }
 
 @media (max-width: 576px) {
+
+html{
+        margin-left: 0 !important;
+}
+    }
+
+@media (min-width: 2500px) {
 
 html{
         margin-left: 0 !important;

@@ -48,7 +48,11 @@
     border: var(--btn-blue-color) solid;
     padding: 0 20px 0 20px;
     @media (--sm-viewport) {
-        border: none;
+        border: none !important;
+        font-size: 15px;
+    }
+    @media (--md-viewport) {
+        border: none !important;
         font-size: 15px;
     }
 }

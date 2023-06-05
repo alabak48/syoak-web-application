@@ -16,11 +16,17 @@
     margin-left: 20px;
 }
 
+
+.card-img-top {
+    object-fit: contain;
+    height: 50%;
+    width: 50%;
+}
+
 .achievements__col img {
     width: 50px;
     height: 50px;
 }
-
 
 .achievements__title {
     font-style: normal;
