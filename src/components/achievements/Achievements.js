@@ -27,7 +27,7 @@ function Achievements() {
             <Row className="achievements__row px-lg-5 px-sm-5">
                 <Col xl={3} lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
                     <SlideUpCard>
-                        <Card style={{width: '15rem'}}>
+                        <Card>
                             <Card.Img variant="top" src={Icon1} alt="Drawing line"
                                       className="achievements__icon achievement__icon--first"/>
                             <Card.Body>
@@ -42,7 +42,7 @@ function Achievements() {
                 <Col xl={3} lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
                     <SlideUpCard>
 
-                        <Card style={{width: '15rem'}}>
+                        <Card>
                             <Card.Img variant="top" src={Icon2} alt="Building"
                                       className="achievements__icon achievement__icon--second"/>
                             <Card.Body>
@@ -56,7 +56,7 @@ function Achievements() {
                 </Col>
                 <Col xl={3} lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
                     <SlideUpCard>
-                        <Card style={{width: '15rem'}}>
+                        <Card>
                             <Card.Img variant="top" src={Icon3} alt="Workers"
                                       className="achievements__icon achievements__icon--three"/>
                             <Card.Body>
@@ -70,7 +70,7 @@ function Achievements() {
                 </Col>
                 <Col xl={3} lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
                     <SlideUpCard>
-                        <Card style={{width: '15rem'}}>
+                        <Card>
                             <Card.Img variant="top" src={Icon4} alt="Gears"
                                       className="achievements__icon achievements__icon--five"/>
                             <Card.Body>

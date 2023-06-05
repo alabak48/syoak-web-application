@@ -47,3 +47,10 @@
     align-self: stretch;
     margin-left: 10px;
 }
+
+.card{
+    width: 16rem;
+    @media(max-width: 1024px){
+        width: 12rem;
+    }
+}
