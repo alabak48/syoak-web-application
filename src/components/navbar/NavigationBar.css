@@ -9,9 +9,10 @@
     }
     @media(--md-viewport){
         margin-left: 0 !important;
-    }
-    @media(--md-viewport){
         display: none !important;
+    }
+    @media(--xxl-viewport){
+        margin-left: -170px !important;
     }
 }
 

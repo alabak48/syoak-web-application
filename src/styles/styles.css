@@ -333,13 +333,14 @@ p {
 
 .navigation__logo {
         margin-left: 0 !important;
+        display: none !important;
 }
     }
 
-@media(max-width: 769px){
+@media(min-width: 2500px){
 
 .navigation__logo {
-        display: none !important;
+        margin-left: -170px !important;
 }
     }
 
