@@ -59,12 +59,12 @@ function BlogContainer() {
                             <div style={{position: 'relative'}}>
                                 <ButtonToolbar style={{position: 'absolute', top: 190, right: 50, zIndex: 2}}>
                                     <OverlayTrigger placement="top" overlay={tooltip}>
-                                        <button bsstyle="default" className="tooltip__btn"></button>
+                                        <button bsStyle="default" className="tooltip__btn"></button>
                                     </OverlayTrigger>
                                 </ButtonToolbar>
                                 <ButtonToolbar style={{position: 'absolute', top: 10, left: 100, zIndex: 2}}>
                                     <OverlayTrigger placement="bottom" overlay={tooltip}>
-                                        <button bsstyle="default" className="tooltip__btn"></button>
+                                        <button bsStyle="default" className="tooltip__btn"></button>
                                     </OverlayTrigger>
                                 </ButtonToolbar>
                                 <Image src={Image2} alt="" className="blog__img" />
@@ -92,12 +92,12 @@ function BlogContainer() {
                             <div style={{position: 'relative'}}>
                                 <ButtonToolbar style={{position: 'absolute', top: 190, right: 50, zIndex: 2}}>
                                     <OverlayTrigger placement="top" overlay={tooltip}>
-                                        <button bsstyle="default" className="tooltip__btn"></button>
+                                        <button bsStyle="default" className="tooltip__btn"></button>
                                     </OverlayTrigger>
                                 </ButtonToolbar>
                                 <ButtonToolbar style={{position: 'absolute', top: 10, left: 100, zIndex: 2}}>
                                     <OverlayTrigger placement="bottom" overlay={tooltip}>
-                                        <button bsstyle="default" className="tooltip__btn"></button>
+                                        <button bsStyle="default" className="tooltip__btn"></button>
                                     </OverlayTrigger>
                                 </ButtonToolbar>
                                 <Image src={Image3} alt="" className="blog__img" />

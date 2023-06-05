@@ -1,3 +1,16 @@
+.blog img{
+    @media (--md-viewport) {
+        width: 200px;
+        height: 200px;
+        margin-top: 15pt;
+    }
+    @media (--sm-viewport) {
+        width: 230px;
+        height: 220px;
+        margin-top: 15pt;
+    }
+}
+
 .blog-text__container {
     width: 430px;
     text-align: left;

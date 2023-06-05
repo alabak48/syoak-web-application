@@ -3,6 +3,10 @@
 .form-control {
     background-color: var(--background-color);
 }
+.form__title{
+    font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(40px + (50 - 40) * ((100vw - 300px) / (1600 - 300)));;
+}
 
 .form-container__label {
     font-style: normal;
@@ -28,13 +32,15 @@
 }
 
 .form-control {
-    width: 430px;
+    width: calc(290px + (330 - 290) * ((100vw - 320px) / (768 - 320)));
+    border: none;
+    border-radius: 0;
+    border-bottom: var(--blue-color) 1px solid;
 }
 
 .form-map__image {
     margin-top: 60px;
-    width: 542px;
-    height: 563px;
+    width: calc(100% * 542 / 542);
+    height: calc(100% * 563 / 563);
     border-radius: 12px;
-
 }

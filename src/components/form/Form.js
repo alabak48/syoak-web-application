@@ -3,19 +3,20 @@ import Form from 'react-bootstrap/Form';
 import Container from "react-bootstrap/Container";
 import {Col, Image, Row} from "react-bootstrap";
 import GoogleMap from "../../assets/google_map.svg";
-import "../../styles/styles.css";
 import {FadeInEffect} from '../animation/FadeInEffect';
-import {SlideUpCard} from '../animation/SlideUpEffect'
+import {SlideUpCard} from '../animation/SlideUpEffect';
+import "../../styles/styles.css";
+
 
 function ContactForm() {
     return (
-        <section className="form-container">
-            <Container className="px-5 pb-5">
-                <Row className="px-5 pb-5">
-                    <Col lg={6} className="form mt-5 ">
+        <section className="form-container px-lg-0 px-sm-5 px-3">
+            <Container className="px-lg-5 pb-lg-5">
+                <Row className="px-lg-5 pb-lg-5">
+                    <Col lg={6} sm={6} className="form mt-5">
                         <SlideUpCard>
                             <FadeInEffect>
-                                <h2>Get in touch with us</h2>
+                                <h2 className="form__title">Get in touch with us</h2>
                                 <Form className="form-container mt-5">
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Label className="form-container__label">Name</Form.Label>
@@ -43,13 +44,14 @@ function ContactForm() {
                             </FadeInEffect>
                         </SlideUpCard>
                     </Col>
-                    <Col lg={6} className="form-map mt-5">
-                    <FadeInEffect>
-                    <SlideUpCard>
-                            <Image className="form-map__image" src={GoogleMap}></Image>
-                        </SlideUpCard>
-                    </FadeInEffect>
-                </Col>
+                    <Col lg={6} sm={6} className="form-map mt-5 px-sm-5 mb-5 mb-lg-0">
+                        <FadeInEffect>
+                            <SlideUpCard>
+                                    <Image className="form-map__image d-flex justify-content-center"
+                                           src={GoogleMap}></Image>
+                            </SlideUpCard>
+                        </FadeInEffect>
+                    </Col>
                 </Row>
             </Container>
         </section>);

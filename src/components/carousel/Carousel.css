@@ -1,5 +1,15 @@
 .carousel__text h2 {
     width: 70%;
+    @media(--sm-viewport){
+        width: 100%;
+    }
+}
+.carousel__title{
+    font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(40px + (50 - 40) * ((100vw - 300px) / (1600 - 300)));;
+}
+.carousel__subtitle{
+    font-size: calc(20px + (20 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .carousel__btn {
@@ -47,10 +57,16 @@
 
 .carousel__horizontal-line {
     margin-right: 10px;
+    @media(--sm-viewport){
+        display: none;
+    }
 }
 
 .carousel__btn--round {
     position: relative;
+    @media(--sm-viewport){
+        display: none;
+    }
 }
 
 
@@ -85,12 +101,92 @@
     color: var(--orange-color);
 }
 
-.carousel img {
-    margin-top: 180px;
-}
-
 .carousel__row {
     height: 200px;
     display: flex;
     align-items: center;
+}
+
+.wrapper__tooltip--first, .wrapper__tooltip--second{
+    position: absolute;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 301px;
+    background-color: white;
+    box-shadow: 3px 7px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    right: 150px;
+    @media(--sm-viewport){
+        display: none;
+
+    }
+    @media(--md-viewport){
+        display: none;
+    }
+
+}
+
+.wrapper__tooltip--second{
+    top: 300px;
+    right: 400px;
+    background-color: white;
+    @media(--sm-viewport){
+        display: none;
+    }
+    @media(--md-viewport){
+        display: none;
+    }
+
+}
+
+.tooltip__text{
+    font-size: 11px;
+    color: #9DA8B6;
+    position: relative;
+    z-index: 2;
+    @media(--sm-viewport){
+        display: none;
+    }
+    @media(--md-viewport){
+        display: none;
+    }
+
+}
+.tooltip__img {
+    margin-right: 10px;
+    background-color: #FBFBFB;
+    padding: 20px;
+    border-right: 1px solid #F0F0F0;
+    position: relative;
+    z-index: 2;
+    @media(--sm-viewport){
+        display: none;
+    }
+    @media (--md-viewport) {
+        display: none;
+    }
+}
+
+.wrapper__img {
+    position: relative;
+    margin-top: 180px;
+    @media(--sm-viewport){
+        display: none;
+    }
+}
+
+.wrapper__tooltip--first {
+    z-index: 20;
+}
+
+.wrapper__tooltip--second {
+    z-index: 30;
+}
+
+.wrapper__img img{
+    @media(--md-viewport){
+    width: 250px;
+        height: 250px;
+}
 }

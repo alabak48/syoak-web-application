@@ -1,3 +1,10 @@
+.navigation-btn__col {
+    @media (--sm-viewport)  {
+        display: none;
+    }
+}
+
+
 .btn-navigation__container--inner {
     display: flex;
     align-items: center;

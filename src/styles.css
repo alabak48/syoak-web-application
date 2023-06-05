@@ -1,13 +1,29 @@
 @import "components/achievements/Achievements.css";
 @import "components/footer/Footer.css";
+@import "components/buttonnavigation/ButtonNavigation.css";
 @import "components/form/Form.css";
-@import "components/blog/blog.css";
+@import "components/blog/Blog.css";
 @import "components/herocontainer/HeroContainer.css";
 @import "components/navbar/NavigationBar.css";
 @import "components/carousel/Carousel.css";
 
-:root{
+@custom-media --sm-viewport (max-width: 576px);
+@custom-media --md-viewport (max-width: 769px);
+@custom-media --lg-viewport (max-width: 1024px);
+@custom-media --xl-viewport (max-width: 1200px);
+@custom-media --xxl-viewport (max-width: 1400px);
+
+html{
     margin-left: 200px;
+    @media (--md-viewport) {
+        margin-left: 0 !important;
+    }
+    @media (--lg-viewport) {
+        margin-left: 0 !important;
+    }
+    @media (--sm-viewport) {
+        margin-left: 0 !important;
+    }
 }
 body {
     border-left: #E1E1E1 1px solid;

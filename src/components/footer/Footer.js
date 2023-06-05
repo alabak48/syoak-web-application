@@ -1,17 +1,16 @@
 import Container from "react-bootstrap/Container";
 import {Col, Row, Image} from "react-bootstrap";
 import LogoName from "../../assets/Logo_name.svg"
-import "../../styles/styles.css"
 import {FaMapMarkerAlt, FaPaperPlane} from 'react-icons/fa';
-import {SlideUpCard} from '../animation/SlideUpEffect'
+import {SlideUpCard} from '../animation/SlideUpEffect';
 import {FadeInEffect} from '../animation/FadeInEffect';
 
 function FooterContainer() {
     return (
         <footer className="footer">
-            <Container className="footer-container mt-5 px-5">
-                <Row className="footer__row px-5">
-                    <Col lg={6} className="footer__col">
+            <Container className="footer-container mt-5 px-3 px-lg-5 px-sm-3">
+                <Row className="footer__row px-lg-5">
+                    <Col lg={6} md={3} sm={12} className="footer__col">
                         <FadeInEffect>
                             <SlideUpCard>
                                 <Image className="footer__img" src={LogoName}></Image>
@@ -28,7 +27,7 @@ function FooterContainer() {
                             </SlideUpCard>
                         </FadeInEffect>
                     </Col>
-                    <Col lg={2} className="footer-about__list mt-3 pb-5">
+                    <Col lg={2} md={3} sm={2} className="footer-about__list mt-3">
                         <FadeInEffect>
                             <SlideUpCard>
                                 <ul>
@@ -44,7 +43,7 @@ function FooterContainer() {
                             </SlideUpCard>
                         </FadeInEffect>
                     </Col>
-                    <Col lg={2} className="footer-about__list mt-3">
+                    <Col lg={2} md={3} sm={2} className="footer-about__list mt-3">
                         <SlideUpCard>
                             <ul>
                                 <h6 className="footer-about__title about__title--services">Services</h6>
@@ -64,7 +63,7 @@ function FooterContainer() {
                             </ul>
                         </SlideUpCard>
                     </Col>
-                    <Col lg={2} className="footer-about__list mt-3 pb-5">
+                    <Col lg={2} md={3} sm={1} className="footer-about__list mt-3 pb-lg-5">
                         <FadeInEffect>
                             <SlideUpCard>
                                 <ul>
@@ -84,14 +83,14 @@ function FooterContainer() {
                     </Col>
                 </Row>
             </Container>
-            <Container className="footer-copyright mt-5 px-5">
+            <Container className="footer-copyright mt-5 px-lg-5">
                 <Row>
-                    <Col lg={6} className="footer-copyright__text mt-3 px-5 pb-3">
+                    <Col lg={6} sm={6} className="footer-copyright__text mt-3 px-lg-5 pb-lg-3">
                         Copyright (c) 2019 syoak.com All rights reserved.
                     </Col>
-                    <Col lg={2} className="footer-copyright__text mt-3 px-5">Support</Col>
-                    <Col lg={2} className="footer-copyright__text mt-3 px-5">Privacy Policy</Col>
-                    <Col lg={2} className="footer-copyright__text mt-3 px-5">Terms of Condition</Col>
+                    <Col lg={2} sm={2} className="footer-copyright__text mt-3 px-lg-5">Support</Col>
+                    <Col lg={2} sm={2} className="footer-copyright__text mt-3 px-lg-5">Privacy Policy</Col>
+                    <Col lg={2} sm={2} className="footer-copyright__text mt-3 px-lg-5">Terms of Condition</Col>
                 </Row>
             </Container>
         </footer>

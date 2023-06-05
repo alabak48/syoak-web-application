@@ -4,17 +4,17 @@ import Icon1 from '../../assets/icon_1.svg';
 import Icon2 from '../../assets/icon_2.svg';
 import Icon3 from '../../assets/icon_3.svg';
 import Icon4 from '../../assets/icon_4.svg';
-import "../../styles/styles.css";
+import "../../styles.css";
 import { FadeInEffect } from '../animation/FadeInEffect'
 import { SlideUpCard } from '../animation/SlideUpEffect'
 
 function Achievements() {
     return (
         <section className="achievements">
-        <Container className="achievements-container px-5 pb-5 pt-5">
-            <Row className="achievements__row px-5 pb-5">
+        <Container className="achievements-container px-lg-5 pb-5 pt-lg-5">
+            <Row className="achievements__row px-lg-5 pb-lg-5 pb-sm-5">
                 <FadeInEffect>
-                <Col lg={7} className="achievements__col pb-5">
+                <Col lg={7} sm={12} className="achievements__col pb-5 px-lg-0 px-sm-5 px-3">
                     <h1 className="achievements__heading pb-4">Our Achievements</h1>
                     <p className="achievements__paragraph">SYOAK industry consists of companies that own and operate
                         extensive networks of
@@ -24,8 +24,8 @@ function Achievements() {
                 </Col>
             </FadeInEffect>
             </Row>
-            <Row className="achievements__row px-5 pb-5">
-                <Col lg={3} className="achievements__col pb-5">
+            <Row className="achievements__row px-lg-5 px-sm-5">
+                <Col lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
                     <SlideUpCard>
                         <Card style={{width: '15rem'}}>
                             <Card.Img variant="top" src={Icon1}
@@ -39,7 +39,7 @@ function Achievements() {
                         </Card>
                     </SlideUpCard>
                 </Col>
-                <Col lg={3} className="achievements__col">
+                <Col lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
                     <SlideUpCard>
 
                         <Card style={{width: '15rem'}}>
@@ -54,7 +54,7 @@ function Achievements() {
                         </Card>
                     </SlideUpCard>
                 </Col>
-                <Col lg={3} className="achievements__col">
+                <Col lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
                     <SlideUpCard>
                         <Card style={{width: '15rem'}}>
                             <Card.Img variant="top" src={Icon3}
@@ -68,7 +68,7 @@ function Achievements() {
                         </Card>
                     </SlideUpCard>
                 </Col>
-                <Col lg={3} className="achievements__col">
+                <Col lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
                     <SlideUpCard>
                         <Card style={{width: '15rem'}}>
                             <Card.Img variant="top" src={Icon4}

@@ -23,6 +23,24 @@
     font-size: 15px;
     line-height: 30px;
     color: var(--btn-blue-color);
+    @media (--sm-viewport) {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.footer-about__list ul {
+    @media(--sm-viewport){
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+.footer-copyright ul {
+    @media(--sm-viewport){
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
 .footer-about__list li:hover {

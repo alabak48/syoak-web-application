@@ -1,8 +1,18 @@
-.logo-wrapper {
+.navigation__logo {
     margin-left: -230px;
     display: flex;
     align-items: center;
     margin-right: 130px;
+    @media(--lg-viewport){
+        margin-left: -60px !important;
+        margin-right: 10px !important;;
+    }
+    @media(--md-viewport){
+        margin-left: 0 !important;
+    }
+    @media(--md-viewport){
+        display: none !important;
+    }
 }
 
 .icon-registration {
@@ -13,7 +23,7 @@
     color: #303031;
     font-size: 13px;
     line-height: 20px;
-    margin-right: 20px;
+    margin-right: 140px;
 }
 
 .navigation__logo--first {
@@ -37,4 +47,16 @@
     border-radius: 3pt;
     border: var(--btn-blue-color) solid;
     padding: 0 20px 0 20px;
+    @media (--sm-viewport) {
+        border: none;
+        font-size: 15px;
+    }
 }
+
+@media (min-width: 769px) {
+    .small-screen-only {
+        display: none;
+    }
+}
+
+

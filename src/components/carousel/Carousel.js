@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
-import "../../styles/styles.css";
-import {ButtonToolbar, Col, Container, Image, OverlayTrigger, Row, Tooltip} from "react-bootstrap";
+import "../../styles.css";
+import {Col, Container, Row} from "react-bootstrap";
 import React, {useRef} from "react";
 import {BiChevronLeft, BiChevronRight} from 'react-icons/bi';
 import {FadeInEffect} from "../animation/FadeInEffect";
@@ -21,22 +21,12 @@ function CarouselContainer() {
         ref.current.next();
     };
 
-
-    const tooltip = (
-        <Tooltip id="tooltip">
-            <Image src={Drop} alt="Syoak drop" className="tooltip-image"/>
-            <div className="tooltip-content">
-                <span>Syoak serves more than 2,500 petrol stations globally</span>
-            </div>
-        </Tooltip>
-    );
-
     return (
-        <section className="carousel">
+        <section className="carousel px-3 px-lg-0">
             <FadeInEffect>
                 <Carousel ref={ref} variant="dark" indicators={false} controls={false}
-                          className="carousel__container pb-5">
-                    <Carousel.Item className="pt-5 px-5" interval={1500}>
+                          className="carousel__container">
+                    <Carousel.Item className="pt-5 px-lg-5 px-md-0 px-sm-5" interval={1500}>
                         <div className="carousel__btn">
                             <div className="carousel__container align-center">
                                 <BiChevronLeft onClick={onPrevClick} className="carousel__arrows"/>
@@ -46,39 +36,45 @@ function CarouselContainer() {
                             <div className="carousel__horizontal-line"></div>
                         </div>
                         <Container>
-                            <Row className="px-5 carousel__row">
-                                <Col lg={4} className="carousel__text">
-                                    <h2 className="pb-5">How We Do It</h2>
-                                    <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and
+                            <Row className="pt-5 pt-lg-0 px-lg-5 px-sm-5 carousel__row">
+                                <Col lg={4} md={6} sm={12} className="carousel__text">
+                                    <h2 className="carousel__title pb-lg-5 pb-sm-4">How We Do It</h2>
+                                    <h5 className="carousel__subtitle">Syoak is uniquely positioned to deliver actionable intelligence to analyze and
                                         reduce risk</h5>
                                     <p>We have a long and proud history givin emphasis to environment social and
                                         economic
                                         outcomes to deliver places that respond.Lorem ipsum dolor sit amet, consectetur
                                         adipisicing elit.</p>
                                 </Col>
-                                <Col lg={8} className="d-flex align-items-end justify-content-center">
-                                    <div style={{position: 'relative'}}>
-                                        <ButtonToolbar style={{position: 'absolute', top: 190, right: 50, zIndex: 2}}>
-                                            <OverlayTrigger placement="top" overlay={tooltip}>
-                                                <button bsStyle="default" className="tooltip__btn"></button>
-                                            </OverlayTrigger>
-                                        </ButtonToolbar>
+                                <Col lg={8} md={6} className="carousel-wrapper__img d-flex align-items-end justify-content-center">
+                                    <div className="wrapper__tooltip--first">
+                                        <div className="tooltip__img">
+                                            <img src={Drop} alt="Gas Drop" />
+                                        </div>
+                                        <div className="tooltip__text">
+                                            <p>Syoak serves more than 2,500 petrol stations globally</p>
+                                    </div>
+                                    </div>
+                                    <div className="wrapper__img">
                                         <img
                                             className=""
                                             src={Item1}
                                             alt="First slide"
                                         />
-                                        <ButtonToolbar style={{position: 'absolute', top: 450, right: 200, zIndex: 2}}>
-                                            <OverlayTrigger placement="bottom" overlay={tooltip}>
-                                                <button bsStyle="default" className="tooltip__btn"></button>
-                                            </OverlayTrigger>
-                                        </ButtonToolbar>
+                                    </div>
+                                    <div className="wrapper__tooltip--second">
+                                        <div className="tooltip__img">
+                                            <img src={Drop} alt="Gas Drop" />
+                                        </div>
+                                        <div className="tooltip__text">
+                                            <p>Syoak serves more than 2,500 petrol stations globally</p>
+                                        </div>
                                     </div>
                                 </Col>
                             </Row>
                         </Container>
                     </Carousel.Item>
-                    <Carousel.Item className="pt-5 px-5" interval={2100}>
+                    <Carousel.Item className="pt-5 px-lg-5 px-md-0 px-sm-5" interval={2100}>
                         <div className="carousel__btn">
                             <div className="align-center">
                                 <BiChevronLeft onClick={onPrevClick} className="carousel__arrows"/>
@@ -88,10 +84,10 @@ function CarouselContainer() {
                             <div className="carousel__horizontal-line"></div>
                         </div>
                         <Container>
-                            <Row className="pt-5 px-5 carousel__row">
-                                <Col lg={4} className="carousel__text">
-                                    <h2 className="pb-5">Mode of Transport</h2>
-                                    <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and
+                            <Row className="pt-5 px-lg-5 px-sm-5 carousel__row">
+                                <Col lg={4} md={6} sm={12} className="carousel__text">
+                                    <h2 className="carousel__title pb-lg-5 pb-sm-4">Mode of Transport</h2>
+                                    <h5 className="carousel__subtitle">Syoak is uniquely positioned to deliver actionable intelligence to analyze and
                                         reduce risk</h5>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                         Ipsum
@@ -99,19 +95,37 @@ function CarouselContainer() {
                                         unknown
                                         printer took a galley of type and scrambled it to make a type specimen book. It
                                         has
-                                        survived not only five centuries, </p>
+                                        survived not only five centuries. </p>
                                 </Col>
-                                <Col lg={8} className="d-flex justify-content-center align-items-end">
-                                    <img
-                                        className=""
-                                        src={Item2}
-                                        alt="Second slide"
-                                    />
+                                <Col lg={8} md={6} className="carousel-wrapper__img d-flex justify-content-center align-items-end">
+                                    <div className="wrapper__tooltip--first">
+                                        <div className="tooltip__img">
+                                            <img src={Drop} alt="Gas Drop" />
+                                        </div>
+                                        <div className="tooltip__text">
+                                            <p>Syoak serves more than 2,500 petrol stations globally</p>
+                                        </div>
+                                    </div>
+                                    <div className="wrapper__img">
+                                        <img
+                                            className=""
+                                            src={Item2}
+                                            alt="Second slide"
+                                        />
+                                    </div>
+                                    <div className="wrapper__tooltip--second">
+                                        <div className="tooltip__img">
+                                            <img src={Drop} alt="Gas Drop" />
+                                        </div>
+                                        <div className="tooltip__text">
+                                            <p>Syoak serves more than 2,500 petrol stations globally</p>
+                                        </div>
+                                    </div>
                                 </Col>
                             </Row>
                         </Container>
                     </Carousel.Item>
-                    <Carousel.Item className="pt-5 px-5" interval={2100}>
+                    <Carousel.Item className="pt-5 px-lg-5 px-md-0 px-sm-5" interval={2100}>
                         <div className="carousel__btn">
                             <div className="align-center">
                                 <BiChevronLeft onClick={onPrevClick} className="carousel__arrows"/>
@@ -121,30 +135,47 @@ function CarouselContainer() {
                             <div className="carousel__horizontal-line"></div>
                         </div>
                         <Container>
-                            <Row className="pt-5 px-5 carousel__row">
-                                <Col lg={4} className="carousel__text">
-                                    <h2 className="pb-5">We Make it More Efficient</h2>
-                                    <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and
+                            <Row className="pt-5 px-lg-5 px-sm-5 carousel__row">
+                                <Col lg={4} md={6} sm={12} className="carousel__text pb-5 pb-sm-5">
+                                    <h2 className="carousel__title pb-lg-5 pb-sm-4">We Make it More Efficient</h2>
+                                    <h5 className="carousel__subtitle">Syoak is uniquely positioned to deliver actionable intelligence to analyze and
                                         reduce risk</h5>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                         Ipsum
                                         has been the industry's standard dummy text ever since the 1500s, when an
                                         unknown
                                         printer took a galley of type and scrambled it to make a type specimen book. It
-                                        has
-                                        survived not only five centuries, </p>
+                                        has survived not only five centuries. </p>
                                 </Col>
-                                <Col lg={8} className="d-flex justify-content-center align-items-end">
-                                    <img
-                                        className=""
-                                        src={Item3}
-                                        alt="Third slide"
-                                    />
+                                <Col lg={8} md={6} className="carousel-wrapper__img d-flex justify-content-center align-items-end">
+                                    <div className="wrapper__tooltip--first">
+                                        <div className="tooltip__img">
+                                            <img src={Drop} alt="Gas Drop" />
+                                        </div>
+                                        <div className="tooltip__text">
+                                            <p>Syoak serves more than 2,500 petrol stations globally</p>
+                                        </div>
+                                    </div>
+                                    <div className="wrapper__img">
+                                        <img
+                                            className=""
+                                            src={Item3}
+                                            alt="Third slide"
+                                        />
+                                    </div>
+                                    <div className="wrapper__tooltip--second">
+                                        <div className="tooltip__img">
+                                            <img src={Drop} alt="Gas Drop" />
+                                        </div>
+                                        <div className="tooltip__text">
+                                            <p>Syoak serves more than 2,500 petrol stations globally</p>
+                                        </div>
+                                    </div>
                                 </Col>
                             </Row>
                         </Container>
                     </Carousel.Item>
-                    <Carousel.Item className="pt-5 px-5" interval={2100}>
+                    <Carousel.Item className="pt-5 px-lg-5 px-md-0 px-sm-5" interval={2100}>
                         <div className="carousel__btn ">
                             <div className="align-center">
                                 <BiChevronLeft onClick={onPrevClick} className="carousel__arrows"/>
@@ -154,10 +185,10 @@ function CarouselContainer() {
                             <div className="carousel__horizontal-line"></div>
                         </div>
                         <Container>
-                            <Row className="pt-5 px-5 carousel__row">
-                                <Col lg={4} className="carousel__text">
-                                    <h2 className="pb-5">Where Does it Go</h2>
-                                    <h5>Syoak is uniquely positioned to deliver actionable intelligence to analyze and
+                            <Row className="pt-5 px-lg-5 px-sm-5 carousel__row">
+                                <Col lg={4} md={6} sm={12} className="carousel__text">
+                                    <h2 className="carousel__title pb-lg-5 pb-sm-4">Where Does it Go</h2>
+                                    <h5 className="carousel__subtitle">Syoak is uniquely positioned to deliver actionable intelligence to analyze and
                                         reduce risk</h5>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                         Ipsum
@@ -165,14 +196,32 @@ function CarouselContainer() {
                                         unknown
                                         printer took a galley of type and scrambled it to make a type specimen book. It
                                         has
-                                        survived not only five centuries, </p>
+                                        survived not only five centuries. </p>
                                 </Col>
-                                <Col lg={8} className="d-flex justify-content-center align-items-end">
-                                    <img
-                                        className=""
-                                        src={Item4}
-                                        alt="Fourth slide"
-                                    />
+                                <Col lg={8} md={6} className="carousel-wrapper__img d-flex justify-content-center align-items-end">
+                                    <div className="wrapper__tooltip--first">
+                                        <div className="tooltip__img">
+                                            <img src={Drop} alt="Gas Drop" />
+                                        </div>
+                                        <div className="tooltip__text">
+                                            <p>Syoak serves more than 2,500 petrol stations globally</p>
+                                        </div>
+                                    </div>
+                                    <div className="wrapper__img">
+                                        <img
+                                            className=""
+                                            src={Item4}
+                                            alt="Fourth slide"
+                                        />
+                                    </div>
+                                    <div className="wrapper__tooltip--second">
+                                        <div className="tooltip__img">
+                                            <img src={Drop} alt="Gas Drop" />
+                                        </div>
+                                        <div className="tooltip__text">
+                                            <p>Syoak serves more than 2,500 petrol stations globally</p>
+                                        </div>
+                                    </div>
                                 </Col>
                             </Row>
                         </Container>

@@ -1,17 +1,18 @@
 import Container from "react-bootstrap/Container";
 import {Button, Col, Row} from "react-bootstrap";
 import {BsArrowUpRight} from 'react-icons/bs';
-import "../../styles/styles.css"
 import ButtonNavigation from "../buttonnavigation/ButtonNavigation";
 import {FadeInEffect} from "../animation/FadeInEffect";
+import "../../styles/styles.css";
+
 
 function HeroContainer() {
     return (
-        <main className="hero">
-            <Container className="hero__container mt-5 px-5 pb-5">
+        <main className="hero px-3 px-lg-0 ">
+            <Container className="hero__container mt-5 px-lg-5 pb-5">
                 <FadeInEffect>
-                    <Row className="hero__row px-5">
-                        <Col xl={10} lg={9} md={11} sm={11} className="hero__title-col">
+                    <Row className="hero__row px-lg-5">
+                        <Col xl={10} lg={9} md={11} sm={11} className="hero__title__col">
                             <h1 className="hero__title">Our business takes the industry of oil & gas to a new
                                 level.</h1>
                         </Col>
@@ -31,8 +32,8 @@ function HeroContainer() {
                     <ButtonNavigation/>
                 </FadeInEffect>
                 <FadeInEffect>
-                    <Col lg={7} className="hero-second__col mt-5 px-5">
-                        <h2>SYOAK Solution</h2>
+                    <Col lg={7} className="hero-second__col mt-5 px-lg-5">
+                        <h2 className="hero__subtitle">SYOAK Solution</h2>
                         <p className="hero-second__text mt-5">SYOAK industry consists of companies that own and operate
                             extensive networks of pipeline assets
                             to connect producers of oil, natural gas and natural gas liquids from the prolific North

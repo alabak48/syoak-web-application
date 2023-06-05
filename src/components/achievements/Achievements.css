@@ -1,8 +1,8 @@
 .achievements__heading {
     font-style: normal;
     font-weight: 900;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(40px + (50 - 40) * ((100vw - 300px) / (1600 - 300)));;
     color: var(--blue-color);
 }
 
@@ -20,6 +20,7 @@
     width: 50px;
     height: 50px;
 }
+
 
 .achievements__title {
     font-style: normal;

@@ -3,16 +3,27 @@ import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../assets/Logo_name.svg';
 import {Nav} from "react-bootstrap";
 import {FaPaperPlane, FaUserCircle} from 'react-icons/fa';
+import {FadeInEffect} from '../animation/FadeInEffect';
 import "../../styles/styles.css";
-import {FadeInEffect} from '../animation/FadeInEffect'
+
 
 function NavigationBar() {
     return (
         <FadeInEffect>
-            <header className="navigation px-5">
-                <Navbar className="px-4" expand="lg">
+            <header className="navigation px-lg-5">
+
+                <Navbar className="px-lg-4" expand="lg">
+
                     <Container className="navigation__container">
-                        <div className="logo-wrapper">
+                        <img
+                            alt=""
+                            src={Logo}
+                            width="70"
+                            height="30"
+                            className="navigation__logo--second small-screen-only"
+                        />{' '}
+                        <Navbar.Toggle aria-controls="responsive-navbar__nav" data-bs-target="#responsive-navbar__nav" />
+                        <Navbar.Collapse id="responsive-navbar__nav">
                             <Navbar.Brand href="#home" className="navigation__logo">
                                 <img
                                     alt=""
@@ -22,9 +33,6 @@ function NavigationBar() {
                                     className="navigation__logo--first d-inline-block align-top"
                                 />{' '}
                             </Navbar.Brand>
-                        </div>
-                        <Navbar.Toggle aria-controls="responsive-navbar__nav" data-bs-target="#responsive-navbar__nav" />
-                        <Navbar.Collapse id="responsive-navbar__nav">
                             <Nav className="nav-links me-auto">
                                 <Nav.Link className="nav-links nav-links__services me-auto">Services</Nav.Link>
                                 <Nav.Link className="nav-links nav-links__projects me-auto">Projects</Nav.Link>
