@@ -6,6 +6,8 @@
 @import "components/herocontainer/HeroContainer.css";
 @import "components/navbar/NavigationBar.css";
 @import "components/carousel/Carousel.css";
+@import "components/sidebar/Sidebar.css";
+
 
 @custom-media --sm-viewport (max-width: 576px);
 @custom-media --md-viewport (max-width: 769px);
