@@ -8,8 +8,7 @@
 @import "components/carousel/Carousel.css";
 @import "components/sidebar/Sidebar.css";
 @import "components/adminnavigation/AdminNavigation.css";
-
-
+@import "components/fuelprices/FuelPrices.css";
 
 @custom-media --sm-viewport (max-width: 576px);
 @custom-media --md-viewport (max-width: 769px);

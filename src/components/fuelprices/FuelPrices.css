@@ -1,0 +1,78 @@
+.prices h2 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #35384D;
+}
+
+.prices__fuel h2,
+.prices__fuel p {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.prices__text--price {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 900;
+    color: #35384D;
+}
+
+.prices__text--avg-price {
+    font-size: 10px;
+    line-height: 9px;
+    font-weight: 500;
+    color: #9DA8B6;
+}
+
+.prices {
+    margin-top: 25px;
+}
+
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 65%;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: row;
+    margin-left: 85px;
+    @media (--sm-viewport) {
+        margin-left: 10px !important;
+        width: 100% !important;
+    }
+}
+
+.prices div {
+    width: 200px;
+    height: 223px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.prices div:hover {
+    width: 314px;
+    height: 223px;
+    margin: 5px;
+    background-color: var(--btn-blue-color);
+    border-radius: 10px;
+    color: white;
+}
+
+@media (--sm-viewport) {
+    .prices__fuel {
+        flex: 1 1 100%;
+    }
+}
+
+.prices__text--percentage--green, .price__arrow--green {
+    color: #00da00;
+}
+
+.prices__text--percentage--red, .price__arrow--red {
+    color: red;
+}
