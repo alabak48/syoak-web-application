@@ -22,16 +22,15 @@ html {
     border-radius: 4px;
 }
 
-.sidebar__item--logo{
+.sidebar__item--logo {
     text-align: center;
     width: 100%;
     border-bottom: solid #E6E6E6 1px;
     border-radius: 0;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
-.sidebar__item--logo img{
+
+.sidebar__item--logo img {
     width: 16px;
     height: 22px;
     margin-bottom: 10px;
@@ -52,6 +51,6 @@ html {
     background-color: var(--orange-color);
 }
 
-.sidebar__item--logo:hover{
+.sidebar__item--logo:hover {
     background-color: white;
 }
