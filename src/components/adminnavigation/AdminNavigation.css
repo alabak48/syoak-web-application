@@ -23,6 +23,10 @@
     border: #626263 1px solid;
     border-radius: 6px;
     padding: 1px;
+    @media (--sm-viewport) {
+        width: 150px !important;
+        margin-right: 60px;
+    }
 }
 
 .search-icon {

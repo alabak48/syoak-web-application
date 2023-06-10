@@ -775,6 +775,14 @@ html {
     padding: 1px;
 }
 
+@media (max-width: 576px) {
+
+.searchbar {
+        width: 150px !important;
+        margin-right: 60px;
+}
+    }
+
 .search-icon {
     display: flex;
     align-items: center;
