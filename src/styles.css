@@ -7,6 +7,8 @@
 @import "components/navbar/NavigationBar.css";
 @import "components/carousel/Carousel.css";
 @import "components/sidebar/Sidebar.css";
+@import "components/adminnavigation/AdminNavigation.css";
+
 
 
 @custom-media --sm-viewport (max-width: 576px);
