@@ -79,7 +79,6 @@ const Providers = ({ providers }) => {
                     ))}
                 </div>
             </div>
-            <div className="activity"></div>
         </section>
     );
 };
