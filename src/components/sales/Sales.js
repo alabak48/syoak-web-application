@@ -1,4 +1,5 @@
 import React from 'react';
+import Jessica from "../../assets/Jessica.svg";
 
 const SalesTable = () => {
     const data = [
@@ -13,8 +14,13 @@ const SalesTable = () => {
         { id: '09', provider: 'INA', stats: '$1.58(+2.1%)' },
     ];
 
+    const imgSrc = Jessica;
+    const imgAlt = 'Jessica Avatar';
+    const list = 'Jessica Smith';
+    const name = 'Good Morning!';
+
     return (
-        <section className="sales">
+        <section className="right-sidebar">
             <div className="sales__container">
                 <h3 className="sales__header">Sales Report</h3>
                 <table className="sales__table">
@@ -35,6 +41,24 @@ const SalesTable = () => {
                     ))}
                     </tbody>
                 </table>
+            </div>
+
+            <div className="messages__container">
+                <h5 className="messages__header">Messages</h5>
+                {Array.from({length: 5}).map((_, index) => (
+                    <div className="messages-monthly__container">
+                        <div className="messages__img">
+                            <img src={imgSrc} alt={imgAlt}/>
+                        </div>
+                        <div className="messages__span--list">
+                            <span>{list}</span>
+                            <p className="messages__text--name">{name}</p>
+                        </div>
+                        <div className="messages__text">
+                            <span>32MIN</span>
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
     );

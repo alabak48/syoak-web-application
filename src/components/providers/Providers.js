@@ -56,7 +56,7 @@ const ProvidersComponent = () => {
     const name = 'John Doe';
 
     return (
-        <section>
+        <section className="providers-activity__section">
             <div className='providers-activity'>
                 <div className="providers__container">
                     <h5>Oil & Gas Providers</h5>
