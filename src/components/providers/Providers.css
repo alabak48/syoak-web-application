@@ -1,4 +1,4 @@
-.providers {
+.providers-activity {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -6,22 +6,23 @@
     align-content: flex-start;
     overflow: auto;
     flex-direction: row;
-    margin-left: 85px;
+    margin-left: 80px;
 }
 
-.providers__container {
-    width: 510px;
+.providers__container, .activity__container {
+    width: 485px;
     height: 400px;
     background-color: white;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .providers-list {
     margin-left: 20px;
 }
 
-.providers__container h5 {
-    margin: 30px 35px 15px;
+.providers__container h5, .activity__container h5 {
+    margin: 30px 30px 25px;
     font-weight: 900;
     font-size: 20px;
     line-height: 24px;
@@ -83,4 +84,64 @@
     font-weight: 600;
     font-size: 13px;
     line-height: 15px;
+}
+
+/* Activity */
+
+.activity__header {
+    display: flex;
+}
+
+.activity__header--month {
+    margin-top: 34px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9DA8B6;
+
+}
+
+.activity-monthly__container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-right: 50px;
+}
+
+.activity__btn--price button {
+    border: none;
+    background-color: white;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 16px;
+    color: #9DA8B6;
+    margin-left: 40px;
+}
+
+.activity__text--time span, .activity__span--list span {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 16px;
+    color: #35384D;
+}
+
+.activity__text--name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #9DA8B6;
+}
+
+.activity__text--time, .activity__img, .activity__span--list{
+    width: 100px;
+}
+
+.activity__img{
+    margin-right: 10px;
+    width: 50px;
 }
