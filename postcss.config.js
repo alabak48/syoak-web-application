@@ -1,9 +1,9 @@
 module.exports = {
     plugins: [
         require('postcss-import'),
-        require('autoprefixer'),
-        require('postcss-preset-env')({stage: 1}),
+        require('postcss-custom-media'),
         require('postcss-nested'),
-        require('postcss-custom-media')
+        require('postcss-preset-env')({stage: 1}),
+        require('autoprefixer')
     ]
 }

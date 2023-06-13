@@ -10,11 +10,11 @@
 }
 
 .providers__container, .activity__container {
-    width: 485px;
     height: 400px;
     background-color: white;
     border-radius: 10px;
     margin: 10px;
+    width: 45%;
 }
 
 .providers-list {

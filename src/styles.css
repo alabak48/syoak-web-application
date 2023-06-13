@@ -9,12 +9,16 @@
 @import "components/sidebar/Sidebar.css";
 @import "components/adminnavigation/AdminNavigation.css";
 @import "components/fuelprices/FuelPrices.css";
+@import "components/statistics/Statistics.css";
+@import "components/providers/Providers.css";
+@import "components/sales/Sales.css";
+
 
 @custom-media --sm-viewport (max-width: 576px);
 @custom-media --md-viewport (max-width: 769px);
-@custom-media --lg-viewport (max-width: 1024px);
+@custom-media --lg-viewport (max-width: 1023px);
 @custom-media --xl-viewport (max-width: 1200px);
-@custom-media --xxl-viewport (min-width: 2500px);
+@custom-media --xxl-viewport (max-width: 1400px);
 
 html{
     margin-left: 200px;
