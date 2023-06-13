@@ -132,6 +132,7 @@
 .wrapper__tooltip--second{
     top: 300px;
     right: 400px;
+    left: 600px;
     background-color: white;
     @media(--sm-viewport){
         display: none;
@@ -142,6 +143,9 @@
     @media(--xxl-viewport){
         top: 300px;
         left: 1400px;
+    }
+    @media(min-width: 1800px){
+        left: 1200px;
     }
 }
 
@@ -182,7 +186,14 @@
 }
 
 .wrapper__tooltip--first {
+    left: 900px;
     z-index: 20;
+    @media(min-width: 1800px){
+        left: 900px;
+    }
+    @media(max-width: 1300px){
+        left: 680px;
+    }
 }
 
 .wrapper__tooltip--second {

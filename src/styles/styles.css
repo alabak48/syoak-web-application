@@ -140,6 +140,22 @@
     margin-bottom: -350px;
 }
 
+@media(min-width: 1551px){
+
+.navigation__arrow-icon {
+        margin-left: -230px !important;
+        margin-right: 140px !important
+};
+    }
+
+@media(min-width: 1700px){
+
+.navigation__arrow-icon {
+        margin-left: -100px !important;
+        margin-right: 70px !important
+};
+    }
+
 :root {
     --background-color: #FBFBFB;
     --blue-color: #00367A;
@@ -332,11 +348,27 @@ p {
     margin-right: 130px;
 }
 
-@media(max-width: 1024px){
+@media(min-width: 1700px){
 
 .navigation__logo {
-        margin-left: -60px !important;
-        margin-right: 10px !important
+        margin-left: -100px !important;
+        margin-right: 70px !important
+};
+    }
+
+@media(max-width: 1699px){
+
+.navigation__logo {
+        margin-left: -220px !important;
+        margin-right: 190px !important
+};
+    }
+
+@media(max-width: 1550px){
+
+.navigation__logo {
+        margin-left: -230px !important;
+        margin-right: 140px !important
 };
     }
 
@@ -348,7 +380,7 @@ p {
 }
     }
 
-@media(max-width: 1400px){
+@media(min-width: 1400px){
 
 .navigation__logo {
         margin-left: -170px !important
@@ -405,7 +437,7 @@ p {
 }
     }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
     .small-screen-only {
         display: none;
     }
@@ -560,7 +592,7 @@ p {
 }
     }
 
-@media(max-width: 1400px){
+@media(min-width: 1400px){
 
 .wrapper__tooltip--first, .wrapper__tooltip--second{
         left: 1200px
@@ -570,6 +602,7 @@ p {
 .wrapper__tooltip--second{
     top: 300px;
     right: 400px;
+    left: 600px;
     background-color: white;
 }
 
@@ -587,11 +620,18 @@ p {
 }
     }
 
-@media(max-width: 1400px){
+@media(min-width: 1400px){
 
 .wrapper__tooltip--second{
         top: 300px;
         left: 1400px
+}
+    }
+
+@media(min-width: 1800px){
+
+.wrapper__tooltip--second{
+        left: 1200px
 }
     }
 
@@ -655,8 +695,23 @@ p {
     }
 
 .wrapper__tooltip--first {
+    left: 900px;
     z-index: 20;
 }
+
+@media(min-width: 1800px){
+
+.wrapper__tooltip--first {
+        left: 900px
+}
+    }
+
+@media(max-width: 1300px){
+
+.wrapper__tooltip--first {
+        left: 680px
+}
+    }
 
 .wrapper__tooltip--second {
     z-index: 30;
@@ -1319,19 +1374,30 @@ p {
 
 html{
     margin-left: 200px;
+
 }
+
+@media (min-width: 1700px) {
+
+html{
+        margin-left: 0 !important
+
+}
+    }
+
+@media (min-width: 992px) {
+
+html{
+        margin-left: 200px  !important
+
+}
+    }
 
 @media (max-width: 769px) {
 
 html{
         margin-left: 0 !important
-}
-    }
 
-@media (max-width: 1023px) {
-
-html{
-        margin-left: 0 !important
 }
     }
 
@@ -1339,13 +1405,7 @@ html{
 
 html{
         margin-left: 0 !important
-}
-    }
 
-@media (max-width: 1400px) {
-
-html{
-        margin-left: 0 !important
 }
     }
 

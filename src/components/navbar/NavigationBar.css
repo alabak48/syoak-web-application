@@ -3,9 +3,17 @@
     display: flex;
     align-items: center;
     margin-right: 130px;
-    @media(max-width: 1024px){
-        margin-left: -60px !important;
-        margin-right: 10px !important;;
+    @media(min-width: 1700px){
+        margin-left: -100px !important;
+        margin-right: 70px !important;;
+    }
+    @media(max-width: 1699px){
+        margin-left: -220px !important;
+        margin-right: 190px !important;;
+    }
+    @media(max-width: 1550px){
+        margin-left: -230px !important;
+        margin-right: 140px !important;;
     }
     @media(--md-viewport){
         margin-left: 0 !important;
@@ -58,7 +66,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
     .small-screen-only {
         display: none;
     }

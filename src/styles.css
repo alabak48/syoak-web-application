@@ -13,27 +13,27 @@
 @import "components/providers/Providers.css";
 @import "components/sales/Sales.css";
 
-
 @custom-media --sm-viewport (max-width: 576px);
 @custom-media --md-viewport (max-width: 769px);
-@custom-media --lg-viewport (max-width: 1023px);
-@custom-media --xl-viewport (max-width: 1200px);
-@custom-media --xxl-viewport (max-width: 1400px);
+@custom-media --lg-viewport (min-width: 992px);
+@custom-media --xl-viewport (min-width: 1200px);
+@custom-media --xxl-viewport (min-width: 1400px);
 
 html{
     margin-left: 200px;
-    @media (--md-viewport) {
+    @media (min-width: 1700px) {
         margin-left: 0 !important;
     }
     @media (--lg-viewport) {
+        margin-left: 200px  !important;
+    }
+    @media (--md-viewport) {
         margin-left: 0 !important;
     }
     @media (--sm-viewport) {
         margin-left: 0 !important;
     }
-    @media (--xxl-viewport) {
-        margin-left: 0 !important;
-    }
+
 }
 body {
     border-left: #E1E1E1 1px solid;
