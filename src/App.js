@@ -3,6 +3,7 @@ import Home from "./pages/HomePage";
 import Admin from "./pages/AdminPage.js";
 import {BrowserRouter, Routes, Route, useLocation} from "react-router-dom";
 
+
 function App() {
     return (
         <BrowserRouter>
