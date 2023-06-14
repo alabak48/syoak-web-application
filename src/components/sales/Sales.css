@@ -1,4 +1,4 @@
-.right-sidebar{
+.sales {
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +13,7 @@
 
 .sales__container {
     width: 400px;
-    height: 700px;
+    height: 578px;
     margin: 5px;
 }
 
@@ -76,11 +76,17 @@
 
 /* Messages */
 
-.messages__container{
-    margin-top: 15px;
-    padding-right: 50px;
+.messages__container {
+    width: 100%;
+    margin-top: 140px;
+    @media (min-width: 1700px) {
+        margin-top: 180px;
+
+    }
 }
-.messages__header{
+
+.messages__header {
+    width: 100%;
     font-weight: 900;
     font-size: 20px;
     line-height: 24px;
@@ -90,33 +96,28 @@
     margin-bottom: 25px;
 }
 
-.messages-monthly__container {
+.messages__container table{
+    width: 100%;
+}
+
+.messages__container tr:hover {
+    background: #FFFFFF;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.03);
+}
+
+.messages{
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
-    margin-right: 90px;
+    padding-bottom: 10px;
 }
-
-.messages__text span {
+.messages__name {
     font-style: normal;
     font-weight: 900;
     font-size: 13px;
-    line-height: 16px;
-    color: #9DA8B6;
-    margin-left: 40px;
-}
-
-
-
-.messages__text--time span, .messages__span--list span {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 16px;
+    line-height: 20px;
     color: #35384D;
 }
-
-.messages__text--name{
+.messages__text{
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -124,11 +125,20 @@
     color: #9DA8B6;
 }
 
-.messages__text--time, .messages__img, .messages__span--list{
-    width: 100px;
+.messages__time{
+    padding-top: 5px;
+    width: 40%;
+    text-align: right;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9DA8B6;
 }
 
-.messages__img{
-    margin-right: 10px;
+.messages__img {
     width: 50px;
+    padding-left: 10px;
+    margin-right: 20px;
+
 }

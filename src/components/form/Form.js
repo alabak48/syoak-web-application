@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from "react-bootstrap/Container";
 import {Col, Image, Row} from "react-bootstrap";
-import GoogleMap from "../../assets/google_map.svg";
+import GoogleMap from "../../assets/GoogleMap.svg";
 import {FadeInEffect} from '../animation/FadeInEffect';
 import {SlideUpCard} from '../animation/SlideUpEffect';
 import "../../postcss/styles.css";

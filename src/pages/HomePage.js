@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { Component, lazy, Suspense } from "react";
-import logo from "../assets/Logo_name.svg";
+import SyoakLogoName from "../assets/SyoakLogoName.svg";
 import "./HomePage.css";
 import Arrow from "../assets/Arrow.svg";
 import LoadingScreen from "../components/animation/LoadingScreen";
@@ -18,7 +18,7 @@ class HomePage extends Component {
             <Suspense fallback={<LoadingScreen />}>
                 <div>
                     <div className="home-page">
-                        <img src={logo} alt="Logo" className="logo" />
+                        <img src={SyoakLogoName} alt="Logo" className="logo" />
                         <div className="arrow"><img src={Arrow} alt="Arrow scroll down"></img></div>
                     </div>
                     <NavigationBar />

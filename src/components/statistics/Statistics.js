@@ -1,7 +1,7 @@
 import React from 'react';
 import "../../postcss/styles.css"
 import 'charts.css';
-import Image2 from "../../assets/img_4.svg"
+import Image4 from "../../assets/Img4.svg"
 import Chevron from "../../assets/Chevron.svg"
 import Shell from "../../assets/Shell.svg"
 import Total from "../../assets/Total.svg"
@@ -61,10 +61,10 @@ const Statistics = () => {
                     </tbody>
                     <div className="statistics__text--percentages">
                         <div>
-                            <div className="company-details__container">
-                                <div className="company-details">
+                            <div className="company__container">
+                                <div className="company__details">
                                     <img src={Chevron} alt="Chevron logo"/>
-                                    <span className="statistics-company__name">CHEVRON</span>
+                                    <span className="company__name">CHEVRON</span>
                                     <AiOutlineArrowDown className="prices__text--percentage--red"/><span
                                     className="prices__text--percentage--red">-6%</span>
 
@@ -76,10 +76,10 @@ const Statistics = () => {
                         </div>
 
                         <div>
-                            <div className="company-details__container">
-                                <div className="company-details">
+                            <div className="company__container">
+                                <div className="company__details">
                                     <img src={Shell} alt="Shell logo"/>
-                                    <span className="statistics-company__name ">SHELL</span>
+                                    <span className="company__name company__name--shell">SHELL</span>
                                     <AiOutlineArrowUp className="prices__text--percentage--green"/><span
                                     className="prices__text--percentage--green">-11%</span>
                                 </div>
@@ -90,10 +90,10 @@ const Statistics = () => {
                         </div>
 
                         <div>
-                            <div className="company-details__container">
-                                <div className="company-details">
+                            <div className="company__container">
+                                <div className="company__details">
                                     <img src={Total} alt="Total logo"/>
-                                    <span className="statistics-company__name">TOTAL</span>
+                                    <span className="company__name">TOTAL</span>
                                     <AiOutlineArrowUp className="prices__text--percentage--green"/><span
                                     className="prices__text--percentage--green">+6%</span>
                                 </div>
@@ -105,9 +105,9 @@ const Statistics = () => {
                     </div>
                 </table>
             </div>
-            <div>
-                <div className="statistics-img__container">
-                    <img src={Image2} alt="Gas pump" className="statistics__img--inner"/>
+            <div className="image__container">
+                <div className="statistics__img">
+                    <img src={Image4} alt="Gas pump" className="statistics__img--inner"/>
                     <caption className="statistics__cap">Find the best gas prices in your state to
                         maximize savings at the pump.
                     </caption>

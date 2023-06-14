@@ -4,11 +4,11 @@ import {Col, Container, Row} from "react-bootstrap";
 import React, {useRef} from "react";
 import {BiChevronLeft, BiChevronRight} from 'react-icons/bi';
 import {FadeInEffect} from "../animation/FadeInEffect";
-import Drop from "../../assets/SyoakDrop_img.svg"
-import Item1 from "../../assets/item-1.svg"
-import Item2 from "../../assets/item-2.svg"
-import Item3 from "../../assets/item-3.svg"
-import Item4 from "../../assets/item-4.svg"
+import Drop from "../../assets/SyoakDrop.svg"
+import Item1 from "../../assets/Item1.svg"
+import Item2 from "../../assets/Item2.svg"
+import Item3 from "../../assets/Item3.svg"
+import Item4 from "../../assets/Item4.svg"
 
 
 function CarouselContainer() {

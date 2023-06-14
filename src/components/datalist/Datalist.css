@@ -1,0 +1,153 @@
+.datalist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    width: 87%;
+    height: 100vh;
+    overflow: auto;
+    flex-direction: row;
+    margin-left: calc(100px + 20px);
+    margin-top: calc(70px - 10px);
+}
+.datalist__heading, .datalist__heading--left, .datalist__heading--right{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+}
+.datalist__btn--sort{
+    background-color: #FBFBFB;
+    border: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #9DA8B6;
+}
+
+.datalist__btn--filter{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border: 2px solid #0052B4;
+    background-color: #FFFFFF;
+    color: #0052B4;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.datalist__btn--add{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border: 2px solid #0052B4;
+    background-color: #0052B4;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 5px;
+    color: #FFFFFF;
+}
+.datalist__heading--left{
+    justify-content: space-between;
+    width: 35%;
+    color: #9DA8B6;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.datalist__sort{
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+.datalist__heading--right{
+    justify-content: end;
+}
+.datalist__table {
+    width: 220rem;
+    margin: 5px;
+    text-align: center;
+}
+
+.datalist__table tbody tr{
+    height: 60px;
+    margin: calc(5px + 10px);
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+}
+
+.datalist__table tbody tr:hover{
+    background: #f8f8f8;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.03);
+}
+
+.datalist__table thead th{
+    width: 320px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #35384D;
+
+}
+
+.datalist h2{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #35384D;
+}
+
+.datalist__type, .datalist__name, .datalist__date{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #9DA8B6;
+}
+
+.datalist__img{
+    padding-right: 5px;
+    height: 35px;
+}
+.datalist__provider{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #35384D;
+}
+
+.datalist__price{
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 16px;
+    color: #35384D;
+}
+
+.datalist__menu{
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+.datalist__pagination button{
+    font-size: 12px;
+    border: none!important;
+}
+.datalist__pagination button{
+    padding: 5px 10px 5px 10px;
+}

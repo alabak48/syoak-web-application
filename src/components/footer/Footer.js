@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import {Col, Row, Image} from "react-bootstrap";
-import LogoName from "../../assets/Logo_name.svg"
+import SyoakLogoName from "../../assets/SyoakLogoName.svg"
 import {FaMapMarkerAlt, FaPaperPlane} from 'react-icons/fa';
 import {SlideUpCard} from '../animation/SlideUpEffect';
 import {FadeInEffect} from '../animation/FadeInEffect';
@@ -13,7 +13,7 @@ function FooterContainer() {
                     <Col lg={6} md={3} sm={12} className="footer__col">
                         <FadeInEffect>
                             <SlideUpCard>
-                                <Image className="footer__img" src={LogoName}></Image>
+                                <Image className="footer__img" src={SyoakLogoName}></Image>
                                 <p className="footer__text mt-4">We have a long and proud history giving emphasis to
                                     environment
                                     social and economic outcomes

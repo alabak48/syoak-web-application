@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from '../../assets/Logo_name.svg';
+import SyoakLogoName from '../../assets/SyoakLogoName.svg';
 import {Nav} from "react-bootstrap";
 import {FaPaperPlane, FaUserCircle} from 'react-icons/fa';
 import {FadeInEffect} from '../animation/FadeInEffect';
@@ -18,7 +18,7 @@ function NavigationBar() {
                     <Container className="navigation__container">
                         <img
                             alt=""
-                            src={Logo}
+                            src={SyoakLogoName}
                             width="70"
                             height="30"
                             className="navigation__logo--second small-screen-only"

@@ -1,8 +1,8 @@
 import React from "react";
 import Home from "./pages/HomePage";
 import Admin from "./pages/AdminPage.js";
+import CreateAdmin from "./pages/CreatePage.js";
 import {BrowserRouter, Routes, Route, useLocation} from "react-router-dom";
-
 
 function App() {
     return (
@@ -26,7 +26,7 @@ function AppContent() {
                 <Route path="/">
                     <Route index element={<Home />} />
                     <Route path="admin" element={<Admin />} />
-
+                    <Route path="create" element={<CreateAdmin />} />
                 </Route>
             </Routes>
         </div>

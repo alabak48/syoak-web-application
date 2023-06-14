@@ -2,9 +2,9 @@ import React from 'react';
 import {Container, Row, Col, Image, Tooltip, ButtonToolbar, OverlayTrigger} from 'react-bootstrap';
 import {FadeInEffect} from "../animation/FadeInEffect";
 import {RxCross1} from 'react-icons/rx';
-import Image1 from "../../assets/img_1.svg"
-import Image2 from "../../assets/img_2.svg"
-import Image3 from "../../assets/img_3.svg"
+import Image1 from "../../assets/Img1.svg"
+import Image2 from "../../assets/Img2.svg"
+import Image3 from "../../assets/Img3.svg"
 
     const tooltip = (
         <Tooltip id="tooltip">

@@ -12,16 +12,23 @@
     margin-left: 90px;
     margin-top: 5px;
     border-radius: 10px;
+    @media (min-width: 1700px) {
+        width: 68%;
+        height: 50vh;
+
+    }
 }
 
 .statistics__table {
     width: 650px;
     height: 100px;
     margin: 5px;
-
+    @media (min-width: 1700px) {
+        width: 850px;
+    }
 }
 
-.statistics-img__container{
+.statistics__img{
     width: 200px;
     height: 100px;
     margin: 5px;
@@ -33,7 +40,7 @@
     margin-left: 20px;
     margin-top: 20px;
     padding-bottom: 20px;
-    width: 910px;
+    width: 95%;
     border-bottom: #E6E6E6 1px solid;
     font-weight: 900;
     font-size: 20px;
@@ -79,6 +86,10 @@
     border-radius: 10px;
     padding: 0;
     margin-right: -320px; /* Space between charts */
+    @media (min-width: 1700px) {
+        margin-right: -420px; /* Space between charts */
+
+    }
 }
 
 #stacked-example-3 td {
@@ -115,7 +126,8 @@
 }
 
 
-.statistics-img__container {
+.statistics__img {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,7 +167,7 @@
     align-items: center;
 }
 
-.company-details {
+.company__details {
     display: flex;
     flex-direction:row;
     align-items: center;
@@ -168,7 +180,7 @@
     margin-left: 46px;
 }
 
-.statistics-company__name{
+.company__name{
     margin-left: 5px;
     font-weight: 900;
     font-size: 13px;
@@ -177,7 +189,7 @@
 
 }
 
-.statistics-company__name--shell{
+.company__name--shell{
     font-weight: 900;
     font-size: 13px;
     line-height: 16px;
@@ -188,6 +200,6 @@
     height: 35px;
 }
 
-.company-details__container{
+.company__container{
     margin-right: 80px;
 }

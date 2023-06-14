@@ -1,9 +1,9 @@
 import Container from "react-bootstrap/Container";
 import {Card, Col, Row} from "react-bootstrap";
-import Icon1 from '../../assets/icon_1.svg';
-import Icon2 from '../../assets/icon_2.svg';
-import Icon3 from '../../assets/icon_3.svg';
-import Icon4 from '../../assets/icon_4.svg';
+import Icon1 from '../../assets/Icon1.svg';
+import Icon2 from '../../assets/Icon2.svg';
+import Icon3 from '../../assets/Icon3.svg';
+import Icon4 from '../../assets/Icon4.svg';
 import "../../styles.css";
 import { FadeInEffect } from '../animation/FadeInEffect'
 import { SlideUpCard } from '../animation/SlideUpEffect'
