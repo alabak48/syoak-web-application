@@ -3,7 +3,7 @@ import Document from "../../assets/Document.svg"
 import Graph from "../../assets/Graph.svg"
 import Admin from "../../assets/Admin.svg"
 import Logo from "../../assets/Logo.svg"
-import "../../styles/styles.css"
+import "../../postcss/styles.css"
 
 
 function Sidebar() {

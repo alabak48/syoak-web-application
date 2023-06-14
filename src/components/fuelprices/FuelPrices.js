@@ -1,4 +1,4 @@
-import "../../styles/styles.css"
+import "../../postcss/styles.css"
 import {AiOutlineArrowDown, AiOutlineArrowUp} from 'react-icons/ai';
 
 

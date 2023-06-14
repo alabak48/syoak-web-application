@@ -1,4 +1,4 @@
-import "../../styles/styles.css"
+import "../../postcss/styles.css"
 import Notifications from "../../assets/Notifications.svg"
 import Avatar from "../../assets/Avatar.svg"
 import {BsSearch} from 'react-icons/bs';

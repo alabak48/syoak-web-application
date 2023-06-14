@@ -2,7 +2,7 @@ import React from 'react';
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md';
 import Location from "../../assets/Shape.svg";
 import GreenArrow from "../../assets/GreenArrow.svg";
-import "../../styles/styles.css";
+import "../../postcss/styles.css";
 import InaLogo from "../../assets/Ina.svg";
 import ShellLogo from "../../assets/Shell.svg";
 import RepsolLogo from "../../assets/Repsol.svg";

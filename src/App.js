@@ -1,19 +1,35 @@
-import HomePage from "./pages/HomePage";
-import {Component} from "react";
-import Sidebar from "./components/sidebar/Sidebar";
-import AdminNavigation from "./components/adminnavigation/AdminNavigation";
-import FuelPrices from "./components/fuelprices/FuelPrices";
-import Statistics from "./components/statistics/Statistics";
-import Providers from "./components/providers/Providers";
-import SalesTable from "./components/sales/Sales";
+import React from "react";
+import Home from "./pages/HomePage";
+import Admin from "./pages/AdminPage.js";
+import {BrowserRouter, Routes, Route, useLocation} from "react-router-dom";
 
+function App() {
+    return (
+        <BrowserRouter>
+            <AppContent />
+        </BrowserRouter>
+    );
+}
 
-class App extends Component {
-    render() {
-        return (<>
-            <HomePage />
-        </>)
-    }
+function AppContent() {
+    const location = useLocation();
+    const isHomePage = location.pathname === "/";
+
+    React.useEffect(() => {
+        document.body.classList.toggle("home-page", isHomePage);
+    }, [isHomePage]);
+
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="/">
+                    <Route index element={<Home />} />
+                    <Route path="admin" element={<Admin />} />
+
+                </Route>
+            </Routes>
+        </div>
+    );
 }
 
 export default App

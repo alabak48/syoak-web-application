@@ -12,13 +12,13 @@
 
 .navigation__arrow-icon {
     margin-left: -160px;
-    margin-bottom: -350px;
+    margin-bottom: -280px;
     @media(min-width: 1551px){
         margin-left: -230px !important;
         margin-right: 140px !important;;
     }
-    @media(min-width: 1700px){
-        margin-left: -100px !important;
+    @media(min-width: 1701px) and (max-width: 1900px){
+        margin-left: -500px !important;
         margin-right: 70px !important;;
     }
 }

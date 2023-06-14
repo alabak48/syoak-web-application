@@ -8,7 +8,7 @@ import {FadeInEffect} from '../animation/FadeInEffect';
 function FooterContainer() {
     return (
         <footer className="footer">
-            <Container className="footer-container mt-5 px-3 px-lg-5 px-sm-3">
+            <Container className="footer-container mt-5 px-3 px-lg-5 px-sm-3 px-xl-0">
                 <Row className="footer__row px-lg-5">
                     <Col lg={6} md={3} sm={12} className="footer__col">
                         <FadeInEffect>

@@ -3,19 +3,18 @@ import {Button, Col, Row} from "react-bootstrap";
 import {BsArrowUpRight} from 'react-icons/bs';
 import ButtonNavigation from "../buttonnavigation/ButtonNavigation";
 import {FadeInEffect} from "../animation/FadeInEffect";
-import "../../styles/styles.css";
+import "../../postcss/styles.css";
 
 
 function HeroContainer() {
     return (
-        <main className="hero px-3 px-lg-0 ">
-            <Container className="hero__container mt-5 px-lg-5 pb-5">
+        <main className="hero px-3 px-lg-5 ">
+            <Container className="hero__container mt-5 px-lg-5 px-xl-0  pb-5">
                 <FadeInEffect>
-                    <Row className="hero__row px-lg-5">
+                    <Row className="hero__row px-lg-5 ">
                         <Col xl={10} lg={9} md={11} sm={11} className="hero__title__col">
                             <h1 className="hero__title">Our business takes the industry of oil & gas to a new
-                                level.</h1>
-                        </Col>
+                                level.</h1></Col>
                         <Col xl={5} lg={6} md={6} sm={12} className="hero-description__col">
                             <p className="hero-description">We have a long and proud history giving emphasis to
                                 environment

@@ -10,7 +10,7 @@ import Image3 from "../../assets/img_3.svg"
         <Tooltip id="tooltip">
             <div className="tooltip__container">
                 <div className="tooltip__icon">
-                    <RxCross1 alt="Tooltip X" className="tooltip__img" />
+                    <RxCross1 alt="Tooltip X" className="tooltip__x" />
                 </div>
                 <div className="tooltip__content">
                     Syoak is uniquely positioned to deliver actionable intelligence to analyze and reduce risk
@@ -21,8 +21,8 @@ import Image3 from "../../assets/img_3.svg"
 
 function BlogContainer() {
     return (
-        <section className="blog">
-            <Container className="blog__container mt-5 px-4 px-lg-5 pb-5">
+        <section className="blog px-lg-0 px-xl-5" id="blogSection">
+            <Container className="blog__container mt-5 pb-5">
                 <Row className="blog__row px-lg-5 mt-sm-5 pt-5">
                     <Col xl={6} lg={6} md={6}>
                         <FadeInEffect>

@@ -10,9 +10,9 @@ import { SlideUpCard } from '../animation/SlideUpEffect'
 
 function Achievements() {
     return (
-        <section className="achievements">
-        <Container className="achievements-container px-lg-5 pb-5 pt-lg-5">
-            <Row className="achievements__row px-lg-5 pb-lg-5 pb-sm-5">
+        <section className="achievements px-lg-5">
+        <Container className="achievements-container px-lg-5 pb-5 pt-lg-5 " >
+            <Row className="achievements__row px-lg-5 pb-lg-5 pb-sm-5 px-xl-0">
                 <FadeInEffect>
                 <Col xl={7} lg={7} sm={12} className="achievements__col pb-5 px-lg-0 px-sm-5 px-3">
                     <h1 className="achievements__heading pb-4">Our Achievements</h1>
@@ -24,8 +24,8 @@ function Achievements() {
                 </Col>
             </FadeInEffect>
             </Row>
-            <Row className="achievements__row px-lg-5 px-sm-5">
-                <Col xl={3} lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center">
+            <Row className="achievements__row px-lg-5 px-sm-5 px-xl-0">
+                <Col xl={3} lg={3} md={6} sm={12} className="achievements__col pt-5 d-flex justify-content-center ">
                     <SlideUpCard>
                         <Card>
                             <Card.Img variant="top" src={Icon1} alt="Drawing line"

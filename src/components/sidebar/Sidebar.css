@@ -55,11 +55,3 @@
 .sidebar__item:hover {
     background-color: var(--orange-color);
 }
-
-.sidebar__item--one {
-    background-color: var(--orange-color);
-}
-
-.sidebar__item--logo:hover {
-    background-color: white;
-}

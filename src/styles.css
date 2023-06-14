@@ -14,32 +14,54 @@
 @import "components/sales/Sales.css";
 
 @custom-media --sm-viewport (max-width: 576px);
-@custom-media --md-viewport (max-width: 769px);
+
+@custom-media --md-viewport (max-width: 958px);
+
 @custom-media --lg-viewport (min-width: 992px);
+
 @custom-media --xl-viewport (min-width: 1200px);
+
 @custom-media --xxl-viewport (min-width: 1400px);
 
-html{
+
+body {
+    border-left: #E1E1E1 1px solid;
+    background-color: #FBFBFB;
+    overflow-x: hidden;
+}
+
+p {
+    color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: lightgrey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--btn-blue-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-color);
+}
+
+.home-page {
     margin-left: 200px;
-    @media (min-width: 1700px) {
-        margin-left: 0 !important;
-    }
-    @media (--lg-viewport) {
-        margin-left: 200px  !important;
-    }
     @media (--md-viewport) {
         margin-left: 0 !important;
     }
     @media (--sm-viewport) {
         margin-left: 0 !important;
     }
-
-}
-body {
-    border-left: #E1E1E1 1px solid;
-    background-color: #FBFBFB;
 }
 
-p{
-    color: var(--text-color);
+.logo, .arrow {
+    @media (--md-viewport) {
+        display: none;
+    }
+    @media (--sm-viewport) {
+        display: none;
+    }
 }

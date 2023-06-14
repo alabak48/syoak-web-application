@@ -1,30 +1,37 @@
-import NavigationBar from "../components/navbar/NavigationBar";
 import 'bootstrap/dist/css/bootstrap.css';
-import HeroContainer from "../components/herocontainer/HeroContainer";
-import {Component} from "react";
-import Achievements from "../components/achievements/Achievements";
-import ContactForm from "../components/form/Form";
-import Footer from "../components/footer/Footer";
-import Carousel from "../components/carousel/Carousel";
-import BlogContainer from "../components/blog/Blog";
-
+import React, { Component, lazy, Suspense } from "react";
+import logo from "../assets/Logo_name.svg";
+import "./HomePage.css";
+import Arrow from "../assets/Arrow.svg";
+import LoadingScreen from "../components/animation/LoadingScreen";
+const NavigationBar = lazy(() => import("../components/navbar/NavigationBar"));
+const HeroContainer = lazy(() => import("../components/herocontainer/HeroContainer"));
+const Achievements = lazy(() => import("../components/achievements/Achievements"));
+const ContactForm = lazy(() => import("../components/form/Form"));
+const Footer = lazy(() => import("../components/footer/Footer"));
+const Carousel = lazy(() => import("../components/carousel/Carousel"));
+const BlogContainer = lazy(() => import("../components/blog/Blog"));
 
 class HomePage extends Component {
     render() {
         return (
-            <>
-
-                <NavigationBar/>
-                <HeroContainer/>
-                <BlogContainer />
-                <Carousel />
-                <Achievements />
-                <ContactForm />
-                <Footer />
-
-            </>
-        )
+            <Suspense fallback={<LoadingScreen />}>
+                <div>
+                    <div className="home-page">
+                        <img src={logo} alt="Logo" className="logo" />
+                        <div className="arrow"><img src={Arrow} alt="Arrow scroll down"></img></div>
+                    </div>
+                    <NavigationBar />
+                    <HeroContainer />
+                    <BlogContainer />
+                    <Carousel />
+                    <Achievements />
+                    <ContactForm />
+                    <Footer />
+                </div>
+            </Suspense>
+        );
     }
 }
 
-export default HomePage
+export default HomePage;

@@ -1,0 +1,23 @@
+.home-page {
+    position: relative;
+}
+
+.logo {
+    position: fixed;
+    width: 80px;
+    height: 30px;
+    top: 8px;
+    left: 55px;
+    z-index: 999;
+
+}
+
+.arrow{
+    position: fixed;
+    width: 80px;
+    height: 30px;
+    top: 550px;
+    left: 100px;
+    z-index: 999;
+
+}

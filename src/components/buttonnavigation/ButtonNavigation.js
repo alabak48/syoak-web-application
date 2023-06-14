@@ -1,15 +1,11 @@
 import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import './ButtonNavigation.css';
-import "../../styles/styles.css";
-import Arrow from "../../assets/Arrow.svg"
+import "../../postcss/styles.css";
 
 const ButtonNavigation = () => {
     return (
         <>
-            <aside className="arrow">
-            <img className="navigation__arrow-icon" src={Arrow} alt="Arrow down"/>
-            </aside>
             <section>
             <Container className="navigation-btn__container pt-5 pb-5">
                 <Row>

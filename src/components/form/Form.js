@@ -5,13 +5,13 @@ import {Col, Image, Row} from "react-bootstrap";
 import GoogleMap from "../../assets/google_map.svg";
 import {FadeInEffect} from '../animation/FadeInEffect';
 import {SlideUpCard} from '../animation/SlideUpEffect';
-import "../../styles/styles.css";
+import "../../postcss/styles.css";
 
 
 function ContactForm() {
     return (
-        <section className="form-container px-lg-0 px-sm-5 px-3">
-            <Container className="px-lg-5 pb-lg-5">
+        <section className="form-container px-lg-5 px-sm-5 px-3 " id="contactForm">
+            <Container className="px-lg-5 pb-lg-5 px-xl-0">
                 <Row className="px-lg-5 pb-lg-5">
                     <Col lg={6} sm={6} className="form mt-5">
                         <SlideUpCard>

@@ -54,3 +54,9 @@
     line-height: 20px;
     color: #9DA8B6;
 }
+
+.footer-copyright{
+    @media (min-width: 1700px) {
+        border-top: none;
+    }
+}
