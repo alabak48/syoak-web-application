@@ -1132,143 +1132,65 @@ p {
     overflow: auto;
     flex-direction: row;
     margin-left: 80px;
+    background-color: #00367A;
 }
 
-.providers__container, .activity__container {
-    height: 400px;
-    background-color: white;
+.providers__wrapper {
+    margin-top: 25px;
+    margin-left: 6%;
+    width: 27%;
+    height: 50%;
+    background-color: #FFFFFF;
     border-radius: 10px;
-    margin: 10px;
-    width: 45%;
 }
 
-.providers-list {
+.providers__wrapper table, .providers__wrapper h5 {
     margin-left: 20px;
 }
 
-.providers__container h5, .activity__container h5 {
-    margin: 30px 30px 25px;
+.providers__table td{
+    padding-bottom: 10px!important;
+}
+
+.providers__heading{
     font-weight: 900;
     font-size: 20px;
-    line-height: 24px;
-    color: var(--heading-color);
+    color: #35384D;
+    padding-top: 25px!important;
 }
 
-.providers-name__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
+.providers__img--provider {
+    height: 25px;
+    margin-right: 10px;
 }
 
-.providers-name__img {
-    width: 30px;
-    height: 20px;
-    margin-right: 15px;
-}
-
-.providers-name__container--left {
-    display: flex;
-    width: 200px;
-}
-
-.providers-name__container--right {
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-}
-
-.providers-name__svg {
-    display: flex;
-    margin: 0 45px 10px 0;
-}
-
-.providers-name__paragraph {
-    color: #9DA8B6;
-    font-style: normal;
+.providers__data--first {
+    font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
-.providers-name__shape {
-    width: 10px;
-    height: 12px;
-    margin-right: 10px;
-    align-content: center;
-}
-
-.providers-name__location {
-    display: flex;
-    align-items: center;
-}
-
-.providers-name__heading {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 15px;
-}
-
-/* Activity */
-
-.activity__header {
-    display: flex;
-}
-
-.activity__header--month {
-    margin-top: 34px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #9DA8B6;
-
-}
-
-.activity-monthly__container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    padding-right: 50px;
-}
-
-.activity__btn--price button {
-    border: none;
-    background-color: white;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 16px;
-    color: #9DA8B6;
-    margin-left: 40px;
-}
-
-.activity__text--time span, .activity__span--list span {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 16px;
     color: #35384D;
+    width: 20%;
 }
 
-.activity__text--name{
-    font-style: normal;
+.providers__data--second {
     font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 15px;
     color: #9DA8B6;
+    width: 25%;
 }
 
-.activity__text--time, .activity__img, .activity__span--list{
-    width: 100px;
+.providers__img--location {
+    margin-right: 5px;
 }
 
-.activity__img{
-    margin-right: 10px;
-    width: 50px;
+.providers__data--third {
+    width: 5%;
+}
+
+.provider__btn {
+    background-color: #FFFFFF;
+    border: none;
 }
 
 .sales {
