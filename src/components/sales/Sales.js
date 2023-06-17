@@ -14,11 +14,6 @@ const SalesTable = () => {
         {id: '09', provider: 'INA', stats: '$1.58(+2.1%)'},
     ];
 
-    const imgSrc = AvatarJessica;
-    const imgAlt = 'Jessica Avatar';
-    const name = 'Jessica Smith';
-    const message = 'Good Morning!';
-
     return (
         <section className="sales">
             <div className="sales__container">
@@ -37,28 +32,6 @@ const SalesTable = () => {
                             <td className="sales__col--id">{row.id}</td>
                             <td className="sales__col--prov">{row.provider}</td>
                             <td className="sales__col--num">{row.stats}</td>
-                        </tr>
-                    ))}
-                    </tbody>
-                </table>
-            </div>
-
-            <div className="messages__container">
-                <h5 className="messages__header">Messages</h5>
-                <table className="messages__container--monthly">
-                    <tbody>
-                    {Array.from({length: 5}).map((_, index) => (
-                        <tr className="messages">
-                            <td className="messages__img">
-                                <img src={imgSrc} alt={imgAlt}/>
-                            </td>
-                            <td className="messages__name">
-                                {name}
-                                <p className="messages__text">{message}</p>
-                            </td>
-                            <td className="messages__time">
-                                32MIN
-                            </td>
                         </tr>
                     ))}
                     </tbody>

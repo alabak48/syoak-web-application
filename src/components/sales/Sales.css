@@ -13,7 +13,7 @@
 
 .sales__container {
     width: 400px;
-    height: 578px;
+    height: fit-content;
     margin: 5px;
 }
 
@@ -72,73 +72,4 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 16px;
-}
-
-/* Messages */
-
-.messages__container {
-    width: 100%;
-    margin-top: 140px;
-    @media (min-width: 1700px) {
-        margin-top: 180px;
-
-    }
-}
-
-.messages__header {
-    width: 100%;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #35384D;
-    margin-bottom: 25px;
-}
-
-.messages__container table{
-    width: 100%;
-}
-
-.messages__container tr:hover {
-    background: #FFFFFF;
-    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.03);
-}
-
-.messages{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 10px;
-}
-.messages__name {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 20px;
-    color: #35384D;
-}
-.messages__text{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    color: #9DA8B6;
-}
-
-.messages__time{
-    padding-top: 5px;
-    width: 40%;
-    text-align: right;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 12px;
-    line-height: 14px;
-    color: #9DA8B6;
-}
-
-.messages__img {
-    width: 50px;
-    padding-left: 10px;
-    margin-right: 20px;
-
 }

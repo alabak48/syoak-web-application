@@ -5,6 +5,8 @@ import SalesTable from "../components/sales/Sales";
 import FuelPrices from "../components/fuelprices/FuelPrices";
 import Statistics from "../components/statistics/Statistics";
 import Providers from "../components/providers/Providers";
+import Activity from "../components/activity/Activity";
+import Messages from "../components/messages/Messages";
 
 class AdminPage extends Component {
     render() {
@@ -16,6 +18,8 @@ class AdminPage extends Component {
                 <FuelPrices/>
                 <Statistics/>
                 <Providers/>
+                <Messages />
+                <Activity/>
             </>
         )
     }

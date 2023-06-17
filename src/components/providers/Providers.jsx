@@ -49,7 +49,7 @@ const ProvidersComponent = () => {
     ];
 
     return (
-        <section className="providers__section">
+        <section className="providers">
             <div className="providers__wrapper">
                 <h5 className="providers__heading">Oil & Gas Providers</h5>
                 <table className="providers__table">

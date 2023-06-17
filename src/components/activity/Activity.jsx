@@ -10,29 +10,30 @@ const Activity = () => {
     const name = 'John Doe';
 
     return (
-        <div className="activity__container">
-            <div className="activity__header">
-                <h5>Activity</h5>
-                <p className="activity__header--month">this month</p>
-            </div>
-            {Array.from({length: 5}).map((_, index) => (
-                <div className="activity-monthly__container">
-                    <div className="activity__text--time" key={index}>
-                        <span>{time}</span>
-                    </div>
-                    <div className="activity__img">
-                        <img src={imgSrc} alt={imgAlt}/>
-                    </div>
-                    <div className="activity__span--list">
-                        <span>{list}</span>
-                        <p className="activity__text--name">{name}</p>
-                    </div>
-                    <div className="activity__btn--price">
-                        <button>Price change</button>
-                    </div>
+        <section className="activity">
+            <div className="activity__wrapper">
+                <div className="activity__header">
+                    <h5>Activity</h5>
+                    <p>this month</p>
                 </div>
-            ))}
-        </div>
+                <table className="activity__table">
+                    {Array.from({length: 5}).map((_, index) => (
+                        <tr key={index} className="activity__row">
+                            <td className="activity__data activity__data--first">{time}</td>
+                            <td className="activity__data activity__data--second"><img src={imgSrc} alt={imgAlt}
+                                                               className="activity__img--arrow"/></td>
+                            <td className="activity__data activity__data--third">
+                                <span className="activity__list" style={{ display: 'block'}}>{list}</span>
+                                <span className="activity__name" style={{ display: 'block'}}>{name}</span>
+                            </td>
+                            <td className="activity__data activity__data--fourth">
+                                <button className="activity__button" style={{ display: 'inline-block' }}>Price change</button>
+                            </td>
+                        </tr>
+                    ))}
+                </table>
+            </div>
+        </section>
     );
 };
 

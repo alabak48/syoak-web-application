@@ -13,6 +13,8 @@
 @import "components/providers/Providers.css";
 @import "components/sales/Sales.css";
 @import "components/datalist/Datalist.css";
+@import "components/activity/Activity.css";
+@import "components/messages/Messages.css";
 
 @custom-media --sm-viewport (max-width: 576px);
 

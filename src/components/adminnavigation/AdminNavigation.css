@@ -20,7 +20,6 @@
     background-color: white;
     width: 230px;
     display: flex;
-    border: #626263 1px solid;
     border-radius: 6px;
     padding: 1px;
     @media (--sm-viewport) {
