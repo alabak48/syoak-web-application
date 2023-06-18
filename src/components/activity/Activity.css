@@ -4,10 +4,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    width: fit-content;
+    width: 40%;
     overflow: auto;
     flex-direction: row;
     position: relative;
+
 }
 
 .activity__wrapper {
@@ -15,7 +16,10 @@
     margin-top: 25px;
     height: fit-content;
     border-radius: 10px;
-    width: 420px;
+    width: 85%;
+    @media (min-width: 1600px) {
+        width: 85%;
+    }
 }
 
 .activity__header {

@@ -4,8 +4,22 @@ import Ina from "../../assets/Ina.svg"
 import {IoIosArrowForward, IoIosArrowBack, IoIosArrowDown} from 'react-icons/io';
 import Filter from "../../assets/Filter.svg"
 import {IoIosAddCircle} from 'react-icons/io'
+import DropDownMenu from "../dropdownmenu/DropDownMenu";
 
 const Datalist = (props) => {
+
+    const [addFuel, setAddFuel] = useState("Fuel Type");
+
+    const handleChange = (event) => {
+        setAddFuel(event.target.value);
+    }
+
+    const [showSidebar, setShowSidebar] = useState(false);
+
+    const toggleSidebar = () => {
+        setShowSidebar(!showSidebar);
+    };
+
     const data = {
         id: 1,
         inputField: <input type="checkbox" id="scales" name="scales"/>,
@@ -16,10 +30,10 @@ const Datalist = (props) => {
         fuelName: 'EUROSUPER95',
         fuelPrice: '0.75€',
         dateCreated: '31/08/2020',
-        dropdownMenu: '...',
+        dropdownMenu: <DropDownMenu/>
     };
 
-    const itemsPerPage = 8;
+    const itemsPerPage = 7;
     const [currentPage, setCurrentPage] = useState(1);
     const totalItems = 578;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -76,16 +90,63 @@ const Datalist = (props) => {
 
     return (
         <section className='datalist'>
+            <div className="datalist__sidebar" style={{transform: showSidebar ? 'translateX(0)' : 'translateX(100%)'}}>
+                <h5 className="sidebar__heading">Add Fuel</h5>
+                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <input type="text" name="name" placeholder="Provider Name"
+                           className="sidebar__input sidebar__input--name"/>
+
+                    <input type="text" name="fuel type" placeholder="Fuel Name"
+                           className="sidebar__input sidebar__input--fuelname"/>
+
+                    <select value={addFuel} onChange={handleChange} className="sidebar__input sidebar__input--fueltype">
+                        <option value="Fuel Type" disabled hidden>Fuel Type</option>
+                        <option value="Autogas">Autogas</option>
+                        <option value="Biodiesel">Biodiesel</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Gasoline">Gasoline</option>
+                    </select>
+
+
+                    <div className="sidebar__input--price" style={{ alignItems: 'flex-start' }}>
+                        <span>Price:</span>
+                        <input type="text" name="fuel price 1"/>
+                        <input type="text" name="fuel price 2"/>
+                    </div>
+
+
+                    <div className="button-container">
+                        <input type="submit" value="Save Changes" className="sidebar__btn sidebar__btn--save"/>
+                        <input type="submit" value="Preview" className="sidebar__btn sidebar__btn--preview"/>
+                        <input type="submit" value="Cancel" className="sidebar__btn sidebar__btn--cancel"/>
+                    </div>
+                </div>
+            </div>
+            <div className="datalist__overlay" onClick={toggleSidebar}
+                 style={{display: showSidebar ? 'block' : 'none'}}></div>
             <div className="datalist__heading">
                 <div className="datalist__heading--left">
                     <h2>Datalist</h2>
                     <span className="datalist__total">{totalItems} total</span>
-                    <span className="datalist__sort">Sort by:<button className="datalist__btn--sort">Fuel Type
-                        <IoIosArrowDown/></button></span>
+                    <span className="datalist__sort">
+                        <span>Sort by</span>
+                         <select value={addFuel} onChange={handleChange} className="datalist__select" style={{
+                             border: "none",
+                             color: "#9DA8B6",
+                             fontSize: "12px",
+                             backgroundColor: "#FBFBFB"
+                         }}>
+                        <option value="Fuel Type" disabled hidden>Fuel Type</option>
+                        <option value="Autogas">Autogas</option>
+                        <option value="Biodiesel">Biodiesel</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Gasoline">Gasoline</option>
+                    </select>
+                        </span>
                 </div>
                 <div className="datalist__heading--right">
                     <button className="datalist__btn--filter"><img src={Filter} alt="Filter Icon"/>Filter</button>
-                    <button className="datalist__btn--add"><IoIosAddCircle />Fuel</button>
+                    <button className="datalist__btn--add" onClick={toggleSidebar}><IoIosAddCircle/>Add Fuel</button>
                 </div>
             </div>
             <div className="datalist__table">

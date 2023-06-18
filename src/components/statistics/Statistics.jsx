@@ -12,6 +12,7 @@ const Statistics = () => {
     return (
         <section className='statistics'>
             <h5 className="statistics__header">Price Statistics</h5>
+            <div className="statistics__wrapper">
             <div className="statistics__table">
                 <table id="stacked-example-3"
                        className="charts-css column hide-data show-heading show-labels show-primary-axis show-3-secondary-axes data-spacing-10 multiple stacked">
@@ -114,6 +115,7 @@ const Statistics = () => {
                     <button className="statistics__btn">Find Prices</button>
                 </div>
             </div>
+        </div>
         </section>
 
     )

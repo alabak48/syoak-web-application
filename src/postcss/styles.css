@@ -170,6 +170,7 @@
     --orange-color: #FF7616;
     --text-color: #6A6A6A;
     --heading-color: #35384D;
+    --warning-color: #DD4545;
 }
 
 .form-control {
@@ -863,7 +864,7 @@ p {
 
 .prices {
     margin-top: 25px;
-    width: 65%;
+    width: 100%;
 }
 
 .prices {
@@ -886,7 +887,7 @@ p {
     }
 
 .prices div {
-    width: 232px;
+    width: 20.5%;
     height: 223px;
     margin: 5px;
     background-color: white;
@@ -913,9 +914,9 @@ p {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    width: 63%;
     background-color: white;
-    height: 60vh;
+    height: 65vh;
+    width: 85%;
     overflow: auto;
     flex-direction: row;
     margin-left: 90px;
@@ -923,27 +924,21 @@ p {
     border-radius: 10px;
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1500px) {
 
 .statistics {
-        width: 68%;
         height: 50vh
 }
 
     }
 
-.statistics__table {
-    width: 650px;
-    height: 100px;
-    margin: 5px;
-}
+.statistics__wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-@media (min-width: 1700px) {
-
-.statistics__table {
-        width: 850px
 }
-    }
 
 .statistics__img{
     width: 200px;
@@ -954,9 +949,10 @@ p {
 
 .statistics__header{
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
     padding-bottom: 20px;
-    width: 95%;
+    width: 100%;
     border-bottom: #E6E6E6 1px solid;
     font-weight: 900;
     font-size: 20px;
@@ -965,6 +961,13 @@ p {
     align-items: center;
     color: #35384D;
 }
+
+@media (min-width: 1700px) {
+
+.statistics__header{
+        width: 100%
+}
+    }
 
 #stacked-example-3 {
     height: 300px;
@@ -999,7 +1002,7 @@ p {
     background-color: #0052B4;
     border-radius: 10px;
     padding: 0;
-    margin-right: -320px;
+    margin-right: -220px;
 }
 
 /* Space between charts */
@@ -1089,7 +1092,6 @@ p {
     display: flex;
     flex-direction:row;
     align-items: center;
-    margin-left: 8px; /* Adjust this value as needed */
 }
 
 .percentage {
@@ -1129,23 +1131,29 @@ p {
     align-items: flex-start;
     align-content: flex-start;
     overflow: auto;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 30%;
     flex-direction: row;
     position: relative;
     float: left;
     margin-left: 90px;
-    margin-right: 30px;
 }
 
 .providers__wrapper {
     margin-top: 25px;
+    margin-right: 8px;
     background-color: #FFFFFF;
-    width: 511px;
+    width: 100%;
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 10px;
 }
+
+@media (min-width: 1600px) {
+
+.providers__wrapper {
+        width: calc(500px + 10vw)
+}
+    }
 
 .providers__wrapper table, .providers__wrapper h5 {
     margin-left: 20px;
@@ -1199,15 +1207,12 @@ p {
 
 .sales {
     margin-top: 25px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
     align-content: flex-end;
     overflow: auto;
-    width: 400px;
-    position: relative;
-    float: right;
+    width: 100%;
 }
 
 .sales__container {
@@ -1288,6 +1293,15 @@ p {
     margin-top: calc(70px - 10px);
 }
 
+@media (max-width: 576px) {
+
+.datalist {
+        margin: 0!important;
+        width: 100%!important;
+        overflow-x: hidden
+}
+    }
+
 .datalist__heading, .datalist__heading--left, .datalist__heading--right{
     width: 100%;
     display: flex;
@@ -1295,6 +1309,13 @@ p {
     margin: 0;
     align-items: center;
 }
+
+@media (max-width: 576px) {
+
+.datalist__heading, .datalist__heading--left, .datalist__heading--right{
+        margin: 0
+}
+    }
 
 .datalist__btn--sort{
     background-color: #FBFBFB;
@@ -1304,6 +1325,14 @@ p {
     line-height: 15px;
     color: #9DA8B6;
 }
+
+@media (max-width: 576px) {
+
+.datalist__btn--sort{
+        font-size: 10px;
+        line-height: 0
+}
+    }
 
 .datalist__btn--filter{
     box-sizing: border-box;
@@ -1317,6 +1346,14 @@ p {
     margin-right: 10px;
 }
 
+@media (max-width: 576px) {
+
+.datalist__btn--filter{
+        padding: 8px 8px;
+        font-size: 0
+}
+    }
+
 .datalist__btn--add{
     box-sizing: border-box;
     display: flex;
@@ -1329,6 +1366,15 @@ p {
     margin-right: 5px;
     color: #FFFFFF;
 }
+
+@media (max-width: 576px) {
+
+.datalist__btn--add{
+        padding: 8px 8px;
+        font-size: 12px;
+        font-weight: 400
+}
+    }
 
 .datalist__heading--left{
     justify-content: space-between;
@@ -1344,8 +1390,14 @@ p {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-
 }
+
+@media (max-width: 576px) {
+
+.datalist__sort{
+        margin-left: 20px
+}
+    }
 
 .datalist__heading--right{
     justify-content: end;
@@ -1376,8 +1428,15 @@ p {
     font-size: 16px;
     line-height: 19px;
     color: #35384D;
-
 }
+
+@media (max-width: 576px) {
+
+.datalist__table thead th{
+        font-weight: 500;
+        font-size: 10px
+}
+    }
 
 .datalist h2{
     font-style: normal;
@@ -1389,6 +1448,16 @@ p {
     color: #35384D;
 }
 
+@media (max-width: 576px) {
+
+.datalist h2{
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 20px;
+        margin-right: 10px
+}
+    }
+
 .datalist__type, .datalist__name, .datalist__date{
     font-style: normal;
     font-weight: 500;
@@ -1397,10 +1466,25 @@ p {
     color: #9DA8B6;
 }
 
+@media (max-width: 576px) {
+
+.datalist__type, .datalist__name, .datalist__date{
+        font-weight: 300;
+        font-size: 12px
+}
+    }
+
 .datalist__img{
     padding-right: 5px;
     height: 35px;
 }
+
+@media (max-width: 576px) {
+
+.datalist__img{
+        height: 20px
+}
+    }
 
 .datalist__provider{
     font-style: normal;
@@ -1417,8 +1501,17 @@ p {
     color: #35384D;
 }
 
+@media (max-width: 576px) {
+
+.datalist__price{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px
+}
+    }
+
 .datalist__menu{
-    text-align: center;
+    text-align: right;
 }
 
 table {
@@ -1427,12 +1520,131 @@ table {
 }
 
 .datalist__pagination button{
+    background-color: #FFFFFF;
     font-size: 12px;
     border: none!important;
 }
 
 .datalist__pagination button{
-    padding: 5px 10px 5px 10px;
+    padding: 8px 12px 8px 12px;
+}
+
+@media(max-width: 576px){
+
+.datalist__pagination button{
+        padding: 2px 5px 2px 5px
+}
+
+    }
+
+.datalist__sidebar {
+    position: fixed;
+    top: 8%;
+    right: 0;
+    height: 100vh;
+    width: 467px;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    z-index: 999;
+}
+
+.sidebar__form input{
+    background-color: #00da00;
+    text-align: center;
+}
+
+.datalist__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 998;
+}
+
+.sidebar__input--price input{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #ECEBED;
+    box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+    width: 73px;
+    height: 48px;
+}
+
+.sidebar__input{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    border:none;
+    width: 386px;
+    height: 48px;
+    margin-bottom: 40px;
+}
+
+.sidebar__btn{
+    display: flex;
+    justify-content: center;
+    width: 121px;
+    height: 35px;
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.sidebar__btn--save{
+    color: white;
+    background: #0052B4;
+    border: none;
+}
+
+.sidebar__btn--preview{
+    color: #0052B4;
+    background: #FFFFFF;
+    border: #0052B4 2px solid;
+}
+
+.sidebar__btn--cancel{
+    color: var(--warning-color);
+    background: #FFFFFF;
+    border: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sidebar__heading{
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.32px;
+    color: #35384D;
+}
+
+.sidebar__input--price {
+    margin-left: -150px;
+    margin-bottom: 100px;
+}
+
+.sidebar__input--price input{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .activity {
@@ -1441,11 +1653,11 @@ table {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 40%;
     overflow: auto;
     flex-direction: row;
     position: relative;
+
 }
 
 .activity__wrapper {
@@ -1454,8 +1666,15 @@ table {
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 10px;
-    width: 420px;
+    width: 85%;
 }
+
+@media (min-width: 1600px) {
+
+.activity__wrapper {
+        width: 85%
+}
+    }
 
 .activity__header {
     display: flex;
@@ -1541,13 +1760,11 @@ table {
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
+
+
+
     overflow: auto;
     width: 400px;
-    position: relative;
-    float: right;
 }
 
 .messages__container{
@@ -1555,7 +1772,7 @@ table {
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 10px;
-    width: 420px;   
+    width: 420px;
 }
 
 .messages__header {
@@ -1621,6 +1838,63 @@ table {
     padding-left: 10px;
     margin-right: 20px;
 
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+}
+
+.dropdown-toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 30px;
+}
+
+.dropdown-toggle:hover {
+    background: #f8f8f8;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 20%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: none;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #f5f5f5;
 }
 
 body {

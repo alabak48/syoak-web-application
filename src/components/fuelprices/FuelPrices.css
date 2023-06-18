@@ -27,7 +27,7 @@
 
 .prices {
     margin-top: 25px;
-    width: 65%;
+    width: 100%;
 }
 
 .prices {
@@ -46,7 +46,7 @@
 }
 
 .prices div {
-    width: 232px;
+    width: 20.5%;
     height: 223px;
     margin: 5px;
     background-color: white;

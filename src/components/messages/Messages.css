@@ -2,20 +2,18 @@
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
+
+
+
     overflow: auto;
     width: 400px;
-    position: relative;
-    float: right;
 }
 
 .messages__container{
     margin-top: 25px;
     height: fit-content;
     border-radius: 10px;
-    width: 420px;   
+    width: 420px;
 }
 
 .messages__header {

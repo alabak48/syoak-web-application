@@ -15,6 +15,7 @@
 @import "components/datalist/Datalist.css";
 @import "components/activity/Activity.css";
 @import "components/messages/Messages.css";
+@import "components/dropdownmenu/DropDownMenu.css";
 
 @custom-media --sm-viewport (max-width: 576px);
 

@@ -5,20 +5,23 @@
     align-items: flex-start;
     align-content: flex-start;
     overflow: auto;
-    width: fit-content;
+    width: 30%;
     flex-direction: row;
     position: relative;
     float: left;
     margin-left: 90px;
-    margin-right: 30px;
 }
 
 .providers__wrapper {
     margin-top: 25px;
+    margin-right: 8px;
     background-color: #FFFFFF;
-    width: 511px;
+    width: 100%;
     height: fit-content;
     border-radius: 10px;
+    @media (min-width: 1600px) {
+        width: calc(500px + 10vw);
+    }
 }
 
 .providers__wrapper table, .providers__wrapper h5 {
