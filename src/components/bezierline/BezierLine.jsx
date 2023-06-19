@@ -21,10 +21,16 @@ const BezierLineChart = () => {
                 datasets: [
                     {
                         label: 'Dataset 1',
-                        data: [4, 6.5, 8, 5, 6, 5, 5],
+                        data: [1, 6.5, 8, 1, 1, 8, 6],
                         borderColor: 'rgba(255, 255, 255, 1)',
                         backgroundColor: 'rgba(255, 255, 255, 1)',
                         tension: 0.4,
+                        pointRadius: [0, 0, 0, 0, 0, 5, 0],
+                        pointStyle: 'circle',
+                        pointBackgroundColor: 'white',
+                        pointBorderColor: 'white',
+                        pointBorderWidth: 2,
+                        pointHoverRadius: 7,
                     },
                 ],
             },
@@ -64,9 +70,11 @@ const BezierLineChart = () => {
                 },
                 layout: {
                     padding: {
-                      bottom: 5,
-                        left: 10
+                        left: 10,
                     },
+                    margin:{
+                        top: 90
+                    }
                 },
             },
         };
@@ -74,7 +82,7 @@ const BezierLineChart = () => {
         chartInstanceRef.current = new Chart(ctx, chartConfig);
     }, []);
 
-    return <canvas ref={chartRef} style={{ width: '300px', height: '100px' }}></canvas>;
+    return <canvas ref={chartRef} style={{ width: '300px', height: '90px' }}></canvas>;
 };
 
 export default BezierLineChart;
