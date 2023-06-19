@@ -14,7 +14,6 @@ class AdminPage extends Component {
     render() {
         return (
             <>
-                <FadeInEffect>
                 <div className="admin-page-container">
                     <Sidebar />
                     <div className="admin-content">
@@ -35,7 +34,6 @@ class AdminPage extends Component {
                         </div>
                     </div>
                 </div>
-                </FadeInEffect>
             </>
         );
     }

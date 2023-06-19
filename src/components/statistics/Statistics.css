@@ -31,6 +31,10 @@
     height: 100px;
     margin: 5px;
     margin-top: 30px;
+    @media (min-width: 1700px) {
+        margin-right: 80px;
+
+    }
 }
 
 
@@ -89,8 +93,7 @@
     padding: 0;
     margin-right: -220px; /* Space between charts */
     @media (min-width: 1700px) {
-        margin-right: -420px; /* Space between charts */
-
+        margin-right: -300px; /* Space between charts */
     }
 }
 
