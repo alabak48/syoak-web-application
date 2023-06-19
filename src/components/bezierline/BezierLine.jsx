@@ -82,7 +82,7 @@ const BezierLineChart = () => {
         chartInstanceRef.current = new Chart(ctx, chartConfig);
     }, []);
 
-    return <canvas ref={chartRef} style={{ width: '300px', height: '90px' }}></canvas>;
+    return <canvas ref={chartRef} style={{ width: '100%', height: '90px' }}></canvas>;
 };
 
 export default BezierLineChart;

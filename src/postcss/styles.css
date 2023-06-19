@@ -876,6 +876,7 @@ p {
     align-items: flex-start;
     align-content: flex-start;
     overflow: auto;
+    height: 40%;
     flex-direction: row;
     margin-left: 85px;
 }
@@ -890,7 +891,7 @@ p {
 
 .prices div {
     width: 20.5%;
-    height: 223px;
+    height: 220px;
     margin: 5px;
     background-color: white;
     border-radius: 10px;
@@ -917,6 +918,13 @@ p {
     border-radius: 10px;
 }
 
+@media (max-width: 1600px) {
+
+.prices div:hover{
+        width: 24%
+}
+    }
+
 .prices__fuel:hover h2,
 .prices__fuel:hover p {
     color: white;
@@ -941,7 +949,7 @@ p {
 @media (min-width: 1500px) {
 
 .statistics {
-        height: 50vh
+        height: 60vh
 }
 
     }
@@ -1765,6 +1773,10 @@ table {
     padding-right: 20px;
 }
 
+.activity__data--first{
+    text-align: right;
+}
+
 .activity__data--third{
     width: 30%;
 }
@@ -1775,6 +1787,10 @@ table {
     justify-content: flex-end;
     text-align: right;
     width: 100%;
+}
+
+.activity table{
+    width: 90%;
 }
 
 .messages{

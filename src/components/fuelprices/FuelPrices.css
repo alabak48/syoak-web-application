@@ -39,6 +39,7 @@
     align-items: flex-start;
     align-content: flex-start;
     overflow: auto;
+    height: 40%;
     flex-direction: row;
     margin-left: 85px;
     @media (--sm-viewport) {
@@ -49,7 +50,7 @@
 
 .prices div {
     width: 20.5%;
-    height: 223px;
+    height: 220px;
     margin: 5px;
     background-color: white;
     border-radius: 10px;
@@ -74,6 +75,9 @@
     width: 22%;
     margin: 5px;
     border-radius: 10px;
+    @media (max-width: 1600px) {
+        width: 24%;
+    }
 }
 
 .prices__fuel:hover h2,
